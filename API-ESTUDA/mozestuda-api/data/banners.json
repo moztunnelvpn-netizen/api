@@ -1,8 +1,14 @@
 [
   {
     "id": "1",
-    "imageUrl": "https://meusite.com/banners/estude.jpg",
-    "title": "Novos livros disponíveis!",
-    "actionUrl": "https://meusite.com/post"
+    "titulo": "Aprenda Grátis!",
+    "imagem": "https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg",
+    "link": "/ebooks"
+  },
+  {
+    "id": "2",
+    "titulo": "Novos Cursos Disponíveis",
+    "imagem": "https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg", 
+    "link": "/cursos"
   }
 ]
