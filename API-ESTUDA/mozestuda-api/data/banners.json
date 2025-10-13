@@ -12,28 +12,29 @@
     "link": "/cursos"
   },
    {
-    "id": "1",
+    "id": "3",
     "titulo": "Aprenda Grátis!",
     "imagem": "https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg",
     "link": "/ebooks"
   },
   {
-    "id": "2",
+    "id": "4",
     "titulo": "Novos Cursos Disponíveis",
     "imagem": "https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg", 
     "link": "/cursos"
   },
    {
-    "id": "1",
+    "id": "5",
     "titulo": "Aprenda Grátis!",
     "imagem": "https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg",
     "link": "/ebooks"
   },
   {
-    "id": "2",
+    "id": "6",
     "titulo": "Novos Cursos Disponíveis",
     "imagem": "https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg", 
     "link": "/cursos"
   }
 ]
+
 
