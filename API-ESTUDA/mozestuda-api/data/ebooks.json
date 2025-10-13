@@ -30,7 +30,7 @@
     "dataCriacao": "2024-01-17"
   },
   {
-    "id": "1",
+    "id": "4",
     "titulo": "Introdução à Programação",
     "autor": "MozEstuda",
     "capa": "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg",
@@ -40,7 +40,7 @@
     "dataCriacao": "2024-01-15"
   },
   {
-    "id": "2",
+    "id": "5",
     "titulo": "Matemática Básica",
     "autor": "Prof. Silva",
     "capa": "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
@@ -50,7 +50,7 @@
     "dataCriacao": "2024-01-16"
   },
   {
-    "id": "3",
+    "id": "6",
     "titulo": "História de Moçambique",
     "autor": "Dr. Maputo",
     "capa": "https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg",
@@ -60,5 +60,6 @@
     "dataCriacao": "2024-01-17"
   }
 ]
+
 
 
