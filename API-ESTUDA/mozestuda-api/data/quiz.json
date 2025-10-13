@@ -1,6 +1,5 @@
 {
   "perguntas": [
-    // ==================== MATEMÁTICA (10 PERGUNTAS) ====================
     {
       "id": "math_1",
       "pergunta": "Qual é o valor de π (pi) aproximadamente?",
@@ -142,7 +141,6 @@
       "explicacao": "20% de 500 é igual a (20/100) * 500, que resulta em 100."
     },
 
-    // ==================== HISTÓRIA (5 PERGUNTAS) ====================
     {
       "id": "hist_1",
       "pergunta": "Em que ano o Brasil foi descoberto?",
@@ -214,7 +212,6 @@
       "explicacao": "Foi um movimento separatista ocorrido em 1789, liderado por Tiradentes."
     },
 
-    // ==================== GEOGRAFIA (5 PERGUNTAS) ====================
     {
       "id": "geo_1",
       "pergunta": "Qual é o maior país do mundo em área territorial?",
@@ -286,7 +283,6 @@
       "explicacao": "Seu movimento causa terremotos, vulcões e formação de relevo."
     },
 
-    // ==================== CIÊNCIAS/QUÍMICA/FÍSICA/BIOLOGIA (10 PERGUNTAS) ====================
     {
       "id": "cien_1",
       "pergunta": "Quantos planetas existem no sistema solar?",
@@ -428,7 +424,6 @@
       "explicacao": "A velocidade é de aproximadamente 299.792 km/s, arredondada para 300.000 km/s."
     },
 
-    // ==================== LINGUAGENS/LITERATURA (5 PERGUNTAS) ====================
     {
       "id": "lit_1",
       "pergunta": "Quem escreveu 'Dom Casmurro'?",
@@ -500,7 +495,6 @@
       "explicacao": "Graciliano Ramos é o autor deste romance essencial do Modernismo brasileiro."
     },
 
-    // ==================== PROGRAMAÇÃO (10 PERGUNTAS) ====================
     {
       "id": "prog_1",
       "pergunta": "O que significa HTML?",
@@ -642,7 +636,6 @@
       "explicacao": "SQL (Structured Query Language) é usada para gerenciar bancos de dados relacionais."
     },
 
-    // ==================== FILOSOFIA (5 PERGUNTAS) ====================
     {
       "id": "filos_1",
       "pergunta": "Quem é considerado o pai da filosofia ocidental?",
