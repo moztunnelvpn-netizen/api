@@ -28,5 +28,36 @@
     "categoria": "História",
     "descricao": "História completa de Moçambique",
     "dataCriacao": "2024-01-17"
+  },
+  {
+    "id": "1",
+    "titulo": "Introdução à Programação",
+    "autor": "MozEstuda",
+    "capa": "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg",
+    "pdf": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "categoria": "Programação",
+    "descricao": "Aprenda os fundamentos da programação",
+    "dataCriacao": "2024-01-15"
+  },
+  {
+    "id": "2",
+    "titulo": "Matemática Básica",
+    "autor": "Prof. Silva",
+    "capa": "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
+    "pdf": "https://www.africau.edu/images/default/sample.pdf",
+    "categoria": "Matemática", 
+    "descricao": "Conceitos fundamentais de matemática",
+    "dataCriacao": "2024-01-16"
+  },
+  {
+    "id": "3",
+    "titulo": "História de Moçambique",
+    "autor": "Dr. Maputo",
+    "capa": "https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg",
+    "pdf": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "categoria": "História",
+    "descricao": "História completa de Moçambique",
+    "dataCriacao": "2024-01-17"
   }
 ]
+
