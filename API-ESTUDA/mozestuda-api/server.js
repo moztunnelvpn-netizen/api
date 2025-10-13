@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Pasta estática para arquivos (capas, PDFs)
+// Pasta estática para arquivos
 app.use("/uploads", express.static("uploads"));
 
 // ----------------------------
@@ -24,41 +24,49 @@ const writeJson = async (file, data) => {
 };
 
 // ----------------------------
-// ROTAS DO QUIZ
+// ROTAS DO QUIZ - CORRIGIDAS
 // ----------------------------
 
-// No seu server.js - ATUALIZE a rota de perguntas
+// ✅ ENDPOINT CORRIGIDO: AGORA ENVIA respostaCorreta
 app.get("/api/quiz/perguntas", async (req, res) => {
   try {
     const { materia, nivel, limit = 10 } = req.query;
+    console.log(`📥 Recebida requisição: materia=${materia}, nivel=${nivel}, limit=${limit}`);
+    
     const quizData = await readJson("./data/quiz.json");
     
     let perguntas = [...quizData.perguntas];
+    console.log(`📚 Total de perguntas no banco: ${perguntas.length}`);
     
     // Aplicar filtros
-    if (materia) {
+    if (materia && materia !== "undefined") {
       perguntas = perguntas.filter(p => 
-        p.materia.toLowerCase() === materia.toLowerCase()
+        p.materia && p.materia.toLowerCase() === materia.toLowerCase()
       );
+      console.log(`🎯 Perguntas após filtro de matéria: ${perguntas.length}`);
     }
     
-    if (nivel) {
+    if (nivel && nivel !== "undefined") {
       perguntas = perguntas.filter(p => 
-        p.nivel.toLowerCase() === nivel.toLowerCase()
+        p.nivel && p.nivel.toLowerCase() === nivel.toLowerCase()
       );
+      console.log(`🎯 Perguntas após filtro de nível: ${perguntas.length}`);
     }
     
-    // ✅ EMBARALHAR PERGUNTAS ALEATORIAMENTE
+    // ✅ EMBARALHAR PERGUNTAS
     perguntas = perguntas.sort(() => Math.random() - 0.5);
+    console.log(`🎲 Perguntas embaralhadas: ${perguntas.length}`);
     
     // Limitar quantidade
-    perguntas = perguntas.slice(0, parseInt(limit));
+    const limite = parseInt(limit);
+    perguntas = perguntas.slice(0, limite);
+    console.log(`📦 Perguntas após limite: ${perguntas.length}`);
     
-    // Remover resposta correta para o cliente
-    const perguntasParaCliente = perguntas.map(p => {
-      const { respostaCorreta, ...perguntaSemResposta } = p;
-      return perguntaSemResposta;
-    });
+    // ✅ CORREÇÃO: NÃO REMOVER respostaCorreta
+    // Agora as perguntas vêm COMPLETAS para o app
+    const perguntasParaCliente = [...perguntas];
+    
+    console.log(`✅ Enviando ${perguntasParaCliente.length} perguntas para o cliente`);
     
     res.json({
       success: true,
@@ -67,6 +75,7 @@ app.get("/api/quiz/perguntas", async (req, res) => {
     });
     
   } catch (error) {
+    console.error("❌ Erro no endpoint /api/quiz/perguntas:", error);
     res.status(500).json({ 
       success: false, 
       error: "Erro ao buscar perguntas do quiz" 
@@ -74,7 +83,7 @@ app.get("/api/quiz/perguntas", async (req, res) => {
   }
 });
 
-// POST - Verificar resposta
+// POST - Verificar resposta (para uso futuro)
 app.post("/api/quiz/verificar-resposta", async (req, res) => {
   try {
     const { perguntaId, resposta } = req.body;
@@ -119,7 +128,7 @@ app.post("/api/quiz/verificar-resposta", async (req, res) => {
 app.get("/api/quiz/materias", async (req, res) => {
   try {
     const quizData = await readJson("./data/quiz.json");
-    const materias = [...new Set(quizData.perguntas.map(p => p.materia))];
+    const materias = [...new Set(quizData.perguntas.map(p => p.materia))].filter(Boolean);
     
     res.json({
       success: true,
@@ -133,12 +142,11 @@ app.get("/api/quiz/materias", async (req, res) => {
   }
 });
 
-// POST - Adicionar nova pergunta (para admin)
+// POST - Adicionar nova pergunta
 app.post("/api/quiz/perguntas", async (req, res) => {
   try {
     const { pergunta, opcoes, respostaCorreta, materia, nivel, explicacao } = req.body;
     
-    // Validação básica
     if (!pergunta || !opcoes || !respostaCorreta || !materia) {
       return res.status(400).json({
         success: false,
@@ -149,7 +157,7 @@ app.post("/api/quiz/perguntas", async (req, res) => {
     const quizData = await readJson("./data/quiz.json");
     
     const novaPergunta = {
-      id: (quizData.perguntas.length + 1).toString(),
+      id: `pergunta_${Date.now()}`,
       pergunta,
       opcoes,
       respostaCorreta,
@@ -175,25 +183,38 @@ app.post("/api/quiz/perguntas", async (req, res) => {
 });
 
 // ----------------------------
-// Rotas principais da API (existentes)
+// Rotas principais da API
 // ----------------------------
 app.get("/", (req, res) => {
   res.send("📘 API MozEstuda está online! | 🎯 Quiz Disponível");
 });
 
 app.get("/api/ebooks", async (req, res) => {
-  const ebooks = await readJson("./data/ebooks.json");
-  res.json(ebooks);
+  try {
+    const ebooks = await readJson("./data/ebooks.json");
+    res.json(ebooks);
+  } catch (error) {
+    res.status(500).json({ error: "Erro ao carregar ebooks" });
+  }
 });
 
 app.get("/api/banners", async (req, res) => {
-  const banners = await readJson("./data/banners.json");
-  res.json(banners);
+  try {
+    const banners = await readJson("./data/banners.json");
+    res.json(banners);
+  } catch (error) {
+    res.status(500).json({ error: "Erro ao carregar banners" });
+  }
 });
-
-// ... (mantenha o resto do seu código existente para ebooks)
 
 // ----------------------------
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Servidor rodando em http://localhost:${PORT} | 🎯 Quiz API Pronta!`));
-
+app.listen(PORT, () => {
+  console.log(`🎯 Servidor Quiz rodando em http://localhost:${PORT}`);
+  console.log(`✅ Endpoints disponíveis:`);
+  console.log(`   GET  /api/quiz/perguntas`);
+  console.log(`   POST /api/quiz/verificar-resposta`);
+  console.log(`   GET  /api/quiz/materias`);
+  console.log(`   GET  /api/ebooks`);
+  console.log(`   GET  /api/banners`);
+});
