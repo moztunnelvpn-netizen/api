@@ -1,74 +1,193 @@
 {
   "perguntas": [
+    // MATEMÁTICA
     {
-      "id": "1",
-      "pergunta": "Qual é a capital de Moçambique?",
+      "id": "math_1",
+      "pergunta": "Qual é o valor de π aproximadamente?",
       "opcoes": {
-        "A": "Maputo",
-        "B": "Beira", 
-        "C": "Nampula",
-        "D": "Quelimane"
+        "A": "3.14",
+        "B": "2.71", 
+        "C": "1.61",
+        "D": "4.20"
       },
       "respostaCorreta": "A",
-      "materia": "Geografia",
+      "materia": "Matemática",
       "nivel": "facil",
-      "explicacao": "Maputo é a capital e maior cidade de Moçambique, localizada na baía de Maputo."
+      "explicacao": "π (pi) é aproximadamente 3.14159, mas comumente arredondado para 3.14."
     },
     {
-      "id": "2",
-      "pergunta": "Quem escreveu 'Os Lusíadas'?",
+      "id": "math_2",
+      "pergunta": "Qual é a fórmula de Bhaskara?",
       "opcoes": {
-        "A": "Fernando Pessoa",
-        "B": "Luís de Camões",
-        "C": "Eça de Queirós",
-        "D": "José Saramago"
+        "A": "x = -b ± √(b² - 4ac) / 2a",
+        "B": "E = mc²",
+        "C": "a² = b² + c²",
+        "D": "V = πr²h"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "A fórmula de Bhaskara resolve equações do segundo grau."
+    },
+
+    // HISTÓRIA
+    {
+      "id": "hist_1",
+      "pergunta": "Em que ano o Brasil foi descoberto?",
+      "opcoes": {
+        "A": "1492",
+        "B": "1500",
+        "C": "1520",
+        "D": "1450"
       },
       "respostaCorreta": "B",
-      "materia": "Literatura",
-      "nivel": "medio",
-      "explicacao": "'Os Lusíadas' é a obra épica de Luís de Camões, publicada em 1572."
+      "materia": "História",
+      "nivel": "facil",
+      "explicacao": "Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500."
     },
+
+    // GEOGRAFIA
     {
-      "id": "3", 
-      "pergunta": "Qual é a fórmula química da água?",
+      "id": "geo_1",
+      "pergunta": "Qual é o maior país do mundo em área territorial?",
       "opcoes": {
-        "A": "CO2",
-        "B": "H2O",
-        "C": "NaCl", 
-        "D": "O2"
+        "A": "China",
+        "B": "Estados Unidos",
+        "C": "Rússia",
+        "D": "Canadá"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia", 
+      "nivel": "facil",
+      "explicacao": "A Rússia possui aproximadamente 17 milhões de km² de área."
+    },
+
+    // CIÊNCIAS
+    {
+      "id": "cien_1",
+      "pergunta": "Quantos planetas existem no sistema solar?",
+      "opcoes": {
+        "A": "7",
+        "B": "8",
+        "C": "9",
+        "D": "10"
+      },
+      "respostaCorreta": "B",
+      "materia": "Ciências",
+      "nivel": "facil",
+      "explicacao": "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
+    },
+
+    // QUÍMICA
+    {
+      "id": "quim_1",
+      "pergunta": "Qual é o símbolo químico do ouro?",
+      "opcoes": {
+        "A": "Ag",
+        "B": "Au",
+        "C": "Fe",
+        "D": "Cu"
       },
       "respostaCorreta": "B",
       "materia": "Química",
       "nivel": "facil",
-      "explicacao": "A água é composta por dois átomos de hidrogênio e um átomo de oxigênio (H₂O)."
+      "explicacao": "Au vem da palavra latina 'Aurum', que significa ouro."
     },
+
+    // FÍSICA
     {
-      "id": "4",
-      "pergunta": "Em que ano Moçambique tornou-se independente?",
+      "id": "fis_1",
+      "pergunta": "Qual é a unidade de medida da força no SI?",
       "opcoes": {
-        "A": "1975",
-        "B": "1965",
-        "C": "1985",
-        "D": "1995"
+        "A": "Joule",
+        "B": "Watt",
+        "C": "Newton",
+        "D": "Pascal"
       },
-      "respostaCorreta": "A", 
-      "materia": "História",
+      "respostaCorreta": "C",
+      "materia": "Física",
       "nivel": "medio",
-      "explicacao": "Moçambique tornou-se independente de Portugal em 25 de Junho de 1975."
+      "explicacao": "Newton (N) é a unidade de força no Sistema Internacional."
     },
+
+    // BIOLOGIA
     {
-      "id": "5",
-      "pergunta": "Qual é o resultado de 8 × (6 - 2) ÷ 4?",
+      "id": "bio_1",
+      "pergunta": "Qual organela é conhecida como 'usina de energia' da célula?",
       "opcoes": {
-        "A": "4",
-        "B": "8", 
-        "C": "12",
-        "D": "16"
+        "A": "Núcleo",
+        "B": "Mitocôndria",
+        "C": "Ribossomo",
+        "D": "Complexo de Golgi"
       },
       "respostaCorreta": "B",
-      "materia": "Matemática",
+      "materia": "Biologia",
       "nivel": "medio",
-      "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
+      "explicacao": "As mitocôndrias produzem ATP, a energia da célula."
+    },
+
+    // LITERATURA
+    {
+      "id": "lit_1",
+      "pergunta": "Quem escreveu 'Dom Casmurro'?",
+      "opcoes": {
+        "A": "José de Alencar",
+        "B": "Machado de Assis",
+        "C": "Lima Barreto",
+        "D": "Graciliano Ramos"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "Machado de Assis é o autor desta obra-prima da literatura brasileira."
+    },
+
+    // INGLÊS
+    {
+      "id": "ing_1",
+      "pergunta": "Qual é o passado do verbo 'to go'?",
+      "opcoes": {
+        "A": "goed",
+        "B": "went",
+        "C": "gone",
+        "D": "goes"
+      },
+      "respostaCorreta": "B",
+      "materia": "Inglês",
+      "nivel": "facil",
+      "explicacao": "'Went' é o simple past do verbo irregular 'to go'."
+    },
+
+    // PROGRAMAÇÃO
+    {
+      "id": "prog_1",
+      "pergunta": "O que significa HTML?",
+      "opcoes": {
+        "A": "Hyper Text Markup Language",
+        "B": "High Tech Modern Language",
+        "C": "Home Tool Markup Language",
+        "D": "Hyper Transfer Markup Language"
+      },
+      "respostaCorreta": "A",
+      "materia": "Programação",
+      "nivel": "facil",
+      "explicacao": "HTML é a linguagem de marcação padrão para páginas web."
+    },
+
+    // FILOSOFIA
+    {
+      "id": "filos_1",
+      "pergunta": "Quem é considerado o pai da filosofia ocidental?",
+      "opcoes": {
+        "A": "Aristóteles",
+        "B": "Platão",
+        "C": "Sócrates",
+        "D": "Pitágoras"
+      },
+      "respostaCorreta": "C",
+      "materia": "Filosofia",
+      "nivel": "medio",
+      "explicacao": "Sócrates é considerado o fundador da filosofia ocidental."
     }
   ]
 }
