@@ -27,7 +27,7 @@ const writeJson = async (file, data) => {
 // ROTAS DO QUIZ
 // ----------------------------
 
-// GET - Buscar perguntas (com filtros opcionais)
+// No seu server.js - ATUALIZE a rota de perguntas
 app.get("/api/quiz/perguntas", async (req, res) => {
   try {
     const { materia, nivel, limit = 10 } = req.query;
@@ -48,7 +48,7 @@ app.get("/api/quiz/perguntas", async (req, res) => {
       );
     }
     
-    // Embaralhar perguntas
+    // ✅ EMBARALHAR PERGUNTAS ALEATORIAMENTE
     perguntas = perguntas.sort(() => Math.random() - 0.5);
     
     // Limitar quantidade
@@ -196,3 +196,4 @@ app.get("/api/banners", async (req, res) => {
 // ----------------------------
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`✅ Servidor rodando em http://localhost:${PORT} | 🎯 Quiz API Pronta!`));
+
