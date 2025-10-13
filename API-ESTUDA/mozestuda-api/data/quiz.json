@@ -1,710 +1,74 @@
 {
   "perguntas": [
     {
-      "id": "math_1",
-      "pergunta": "Qual é o valor de π (pi) aproximadamente?",
+      "id": "1",
+      "pergunta": "Qual é a capital de Moçambique?",
       "opcoes": {
-        "A": "3.14",
-        "B": "2.71",
-        "C": "1.61",
-        "D": "4.20"
+        "A": "Maputo",
+        "B": "Beira", 
+        "C": "Nampula",
+        "D": "Quelimane"
       },
       "respostaCorreta": "A",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "π (pi) é aproximadamente 3.14159, mas comumente arredondado para 3.14."
-    },
-    {
-      "id": "math_2",
-      "pergunta": "Qual é a fórmula de Bhaskara?",
-      "opcoes": {
-        "A": "x = -b ± √(b² - 4ac) / 2a",
-        "B": "E = mc²",
-        "C": "a² = b² + c²",
-        "D": "V = πr²h"
-      },
-      "respostaCorreta": "A",
-      "materia": "Matemática",
-      "nivel": "medio",
-      "explicacao": "A fórmula de Bhaskara resolve equações do segundo grau."
-    },
-    {
-      "id": "math_3",
-      "pergunta": "Quanto é 7 × 8?",
-      "opcoes": {
-        "A": "54",
-        "B": "56",
-        "C": "58",
-        "D": "60"
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "7 × 8 = 56."
-    },
-    {
-      "id": "math_4",
-      "pergunta": "Qual é a raiz quadrada de 81?",
-      "opcoes": {
-        "A": "7",
-        "B": "8",
-        "C": "9",
-        "D": "10"
-      },
-      "respostaCorreta": "C",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "9 × 9 = 81."
-    },
-    {
-      "id": "math_5",
-      "pergunta": "O que é um número primo?",
-      "opcoes": {
-        "A": "Divisível por 2",
-        "B": "Divisível por 1 e por ele mesmo",
-        "C": "Um número ímpar",
-        "D": "Um número negativo"
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "medio",
-      "explicacao": "Um número primo é um número natural maior que 1 que tem apenas dois divisores positivos distintos: 1 e ele próprio."
-    },
-    {
-      "id": "math_6",
-      "pergunta": "Qual a soma dos ângulos internos de um triângulo?",
-      "opcoes": {
-        "A": "90°",
-        "B": "180°",
-        "C": "270°",
-        "D": "360°"
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "A soma dos ângulos internos de qualquer triângulo é sempre 180 graus."
-    },
-    {
-      "id": "math_7",
-      "pergunta": "Qual o resultado de 2³ + 5²?",
-      "opcoes": {
-        "A": "33",
-        "B": "31",
-        "C": "10",
-        "D": "13"
-      },
-      "respostaCorreta": "A",
-      "materia": "Matemática",
-      "nivel": "medio",
-      "explicacao": "2³ = 8 e 5² = 25. A soma é 8 + 25 = 33."
-    },
-    {
-      "id": "math_8",
-      "pergunta": "O que significa 'mediana' em estatística?",
-      "opcoes": {
-        "A": "O valor que mais se repete.",
-        "B": "O valor central de um conjunto de dados ordenados.",
-        "C": "A média aritmética simples.",
-        "D": "O maior valor do conjunto."
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "medio",
-      "explicacao": "A mediana é o valor que separa a metade superior da inferior de uma amostra de dados."
-    },
-    {
-      "id": "math_9",
-      "pergunta": "Um polígono com 6 lados é chamado de:",
-      "opcoes": {
-        "A": "Pentágono",
-        "B": "Heptágono",
-        "C": "Octógono",
-        "D": "Hexágono"
-      },
-      "respostaCorreta": "D",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "Hexágono é o polígono com seis lados."
-    },
-    {
-      "id": "math_10",
-      "pergunta": "Quanto é 20% de 500?",
-      "opcoes": {
-        "A": "50",
-        "B": "100",
-        "C": "200",
-        "D": "250"
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "20% de 500 é igual a (20/100) * 500, que resulta em 100."
-    },
-
-    {
-      "id": "hist_1",
-      "pergunta": "Em que ano o Brasil foi descoberto?",
-      "opcoes": {
-        "A": "1492",
-        "B": "1500",
-        "C": "1520",
-        "D": "1450"
-      },
-      "respostaCorreta": "B",
-      "materia": "História",
-      "nivel": "facil",
-      "explicacao": "Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500."
-    },
-    {
-      "id": "hist_2",
-      "pergunta": "Quem foi o primeiro presidente do Brasil?",
-      "opcoes": {
-        "A": "Getúlio Vargas",
-        "B": "Deodoro da Fonseca",
-        "C": "Floriano Peixoto",
-        "D": "Prudente de Morais"
-      },
-      "respostaCorreta": "B",
-      "materia": "História",
-      "nivel": "medio",
-      "explicacao": "Marechal Deodoro da Fonseca foi o primeiro presidente após a Proclamação da República."
-    },
-    {
-      "id": "hist_3",
-      "pergunta": "Qual evento marcou o início da Idade Contemporânea?",
-      "opcoes": {
-        "A": "Queda de Roma",
-        "B": "Revolução Francesa",
-        "C": "Descobrimento da América",
-        "D": "Revolução Industrial"
-      },
-      "respostaCorreta": "B",
-      "materia": "História",
-      "nivel": "medio",
-      "explicacao": "A Revolução Francesa (1789) é o marco tradicionalmente aceito."
-    },
-    {
-      "id": "hist_4",
-      "pergunta": "Em qual guerra a bomba atômica foi usada?",
-      "opcoes": {
-        "A": "Primeira Guerra Mundial",
-        "B": "Guerra Fria",
-        "C": "Segunda Guerra Mundial",
-        "D": "Guerra do Vietnã"
-      },
-      "respostaCorreta": "C",
-      "materia": "História",
-      "nivel": "facil",
-      "explicacao": "As bombas foram lançadas sobre Hiroshima e Nagasaki em 1945."
-    },
-    {
-      "id": "hist_5",
-      "pergunta": "O que foi a Inconfidência Mineira?",
-      "opcoes": {
-        "A": "Revolta popular contra o preço do sal.",
-        "B": "Movimento de independência no final do séc. XVIII.",
-        "C": "Guerra entre Portugal e Espanha.",
-        "D": "Fundação da cidade de Ouro Preto."
-      },
-      "respostaCorreta": "B",
-      "materia": "História",
-      "nivel": "medio",
-      "explicacao": "Foi um movimento separatista ocorrido em 1789, liderado por Tiradentes."
-    },
-
-    {
-      "id": "geo_1",
-      "pergunta": "Qual é o maior país do mundo em área territorial?",
-      "opcoes": {
-        "A": "China",
-        "B": "Estados Unidos",
-        "C": "Rússia",
-        "D": "Canadá"
-      },
-      "respostaCorreta": "C",
       "materia": "Geografia",
       "nivel": "facil",
-      "explicacao": "A Rússia possui aproximadamente 17 milhões de km² de área."
+      "explicacao": "Maputo é a capital e maior cidade de Moçambique, localizada na baía de Maputo."
     },
     {
-      "id": "geo_2",
-      "pergunta": "Qual o bioma predominante na Amazônia Legal?",
+      "id": "2",
+      "pergunta": "Quem escreveu 'Os Lusíadas'?",
       "opcoes": {
-        "A": "Caatinga",
-        "B": "Cerrado",
-        "C": "Amazônia (Floresta Equatorial)",
-        "D": "Pantanal"
-      },
-      "respostaCorreta": "C",
-      "materia": "Geografia",
-      "nivel": "facil",
-      "explicacao": "A Amazônia é o maior bioma brasileiro, essencialmente uma floresta equatorial."
-    },
-    {
-      "id": "geo_3",
-      "pergunta": "Qual linha imaginária divide a Terra em Hemisfério Norte e Hemisfério Sul?",
-      "opcoes": {
-        "A": "Meridiano de Greenwich",
-        "B": "Trópico de Câncer",
-        "C": "Círculo Polar Ártico",
-        "D": "Linha do Equador"
-      },
-      "respostaCorreta": "D",
-      "materia": "Geografia",
-      "nivel": "facil",
-      "explicacao": "A Linha do Equador está na latitude 0° e faz essa divisão."
-    },
-    {
-      "id": "geo_4",
-      "pergunta": "Qual é a capital do Canadá?",
-      "opcoes": {
-        "A": "Toronto",
-        "B": "Vancouver",
-        "C": "Ottawa",
-        "D": "Montreal"
-      },
-      "respostaCorreta": "C",
-      "materia": "Geografia",
-      "nivel": "medio",
-      "explicacao": "Ottawa é a capital federal. Toronto é a maior cidade."
-    },
-    {
-      "id": "geo_5",
-      "pergunta": "O que são placas tectônicas?",
-      "opcoes": {
-        "A": "Grandes montanhas submarinas.",
-        "B": "Estruturas no núcleo da Terra.",
-        "C": "Grandes blocos da crosta terrestre que se movem.",
-        "D": "Camadas de rocha sedimentar."
-      },
-      "respostaCorreta": "C",
-      "materia": "Geografia",
-      "nivel": "medio",
-      "explicacao": "Seu movimento causa terremotos, vulcões e formação de relevo."
-    },
-
-    {
-      "id": "cien_1",
-      "pergunta": "Quantos planetas existem no sistema solar?",
-      "opcoes": {
-        "A": "7",
-        "B": "8",
-        "C": "9",
-        "D": "10"
-      },
-      "respostaCorreta": "B",
-      "materia": "Ciências",
-      "nivel": "facil",
-      "explicacao": "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
-    },
-    {
-      "id": "quim_1",
-      "pergunta": "Qual é o símbolo químico do ouro?",
-      "opcoes": {
-        "A": "Ag",
-        "B": "Au",
-        "C": "Fe",
-        "D": "Cu"
-      },
-      "respostaCorreta": "B",
-      "materia": "Química",
-      "nivel": "facil",
-      "explicacao": "Au vem da palavra latina 'Aurum', que significa ouro."
-    },
-    {
-      "id": "fis_1",
-      "pergunta": "Qual é a unidade de medida da força no SI?",
-      "opcoes": {
-        "A": "Joule",
-        "B": "Watt",
-        "C": "Newton",
-        "D": "Pascal"
-      },
-      "respostaCorreta": "C",
-      "materia": "Física",
-      "nivel": "medio",
-      "explicacao": "Newton (N) é a unidade de força no Sistema Internacional."
-    },
-    {
-      "id": "bio_1",
-      "pergunta": "Qual organela é conhecida como 'usina de energia' da célula?",
-      "opcoes": {
-        "A": "Núcleo",
-        "B": "Mitocôndria",
-        "C": "Ribossomo",
-        "D": "Complexo de Golgi"
-      },
-      "respostaCorreta": "B",
-      "materia": "Biologia",
-      "nivel": "medio",
-      "explicacao": "As mitocôndrias produzem ATP, a energia da célula."
-    },
-    {
-      "id": "quim_2",
-      "pergunta": "O que é um elemento isótopo?",
-      "opcoes": {
-        "A": "Átomos com o mesmo número de nêutrons.",
-        "B": "Átomos com o mesmo número de massa.",
-        "C": "Átomos com o mesmo número atômico (prótons) e diferentes nêutrons.",
-        "D": "Moléculas de gases nobres."
-      },
-      "respostaCorreta": "C",
-      "materia": "Química",
-      "nivel": "medio",
-      "explicacao": "Isótopos são átomos do mesmo elemento com massas atômicas diferentes."
-    },
-    {
-      "id": "fis_2",
-      "pergunta": "Qual lei afirma que 'para toda ação, há uma reação igual e oposta'?",
-      "opcoes": {
-        "A": "Primeira Lei de Newton",
-        "B": "Segunda Lei de Newton",
-        "C": "Terceira Lei de Newton",
-        "D": "Lei da Gravitação Universal"
-      },
-      "respostaCorreta": "C",
-      "materia": "Física",
-      "nivel": "medio",
-      "explicacao": "É o Princípio da Ação e Reação."
-    },
-    {
-      "id": "bio_2",
-      "pergunta": "Qual é a função do DNA?",
-      "opcoes": {
-        "A": "Produção de energia.",
-        "B": "Transporte de oxigênio.",
-        "C": "Armazenar e transmitir a informação genética.",
-        "D": "Catalisar reações químicas."
-      },
-      "respostaCorreta": "C",
-      "materia": "Biologia",
-      "nivel": "facil",
-      "explicacao": "O DNA (Ácido Desoxirribonucleico) contém as instruções para o desenvolvimento e funcionamento de todos os seres vivos."
-    },
-    {
-      "id": "cien_2",
-      "pergunta": "Qual é o principal gás responsável pelo efeito estufa?",
-      "opcoes": {
-        "A": "Oxigênio (O₂)",
-        "B": "Nitrogênio (N₂)",
-        "C": "Gás Carbônico (CO₂)",
-        "D": "Hélio (He)"
-      },
-      "respostaCorreta": "C",
-      "materia": "Ciências",
-      "nivel": "facil",
-      "explicacao": "O Dióxido de Carbono é o gás de maior volume na contribuição do efeito estufa."
-    },
-    {
-      "id": "quim_3",
-      "pergunta": "O que o pH mede?",
-      "opcoes": {
-        "A": "Temperatura da água.",
-        "B": "Concentração de íons de Hidrogênio (acidez/basicidade).",
-        "C": "Densidade de um líquido.",
-        "D": "Pressão atmosférica."
-      },
-      "respostaCorreta": "B",
-      "materia": "Química",
-      "nivel": "medio",
-      "explicacao": "Potencial Hidrogeniônico (pH) mede o nível de acidez ou basicidade de uma solução."
-    },
-    {
-      "id": "fis_3",
-      "pergunta": "Qual é a velocidade da luz no vácuo (aproximadamente)?",
-      "opcoes": {
-        "A": "300 km/s",
-        "B": "300.000 km/s",
-        "C": "30.000 km/h",
-        "D": "300.000 km/h"
-      },
-      "respostaCorreta": "B",
-      "materia": "Física",
-      "nivel": "medio",
-      "explicacao": "A velocidade é de aproximadamente 299.792 km/s, arredondada para 300.000 km/s."
-    },
-
-    {
-      "id": "lit_1",
-      "pergunta": "Quem escreveu 'Dom Casmurro'?",
-      "opcoes": {
-        "A": "José de Alencar",
-        "B": "Machado de Assis",
-        "C": "Lima Barreto",
-        "D": "Graciliano Ramos"
+        "A": "Fernando Pessoa",
+        "B": "Luís de Camões",
+        "C": "Eça de Queirós",
+        "D": "José Saramago"
       },
       "respostaCorreta": "B",
       "materia": "Literatura",
       "nivel": "medio",
-      "explicacao": "Machado de Assis é o autor desta obra-prima da literatura brasileira."
+      "explicacao": "'Os Lusíadas' é a obra épica de Luís de Camões, publicada em 1572."
     },
     {
-      "id": "ing_1",
-      "pergunta": "Qual é o passado do verbo 'to go'?",
+      "id": "3", 
+      "pergunta": "Qual é a fórmula química da água?",
       "opcoes": {
-        "A": "goed",
-        "B": "went",
-        "C": "gone",
-        "D": "goes"
+        "A": "CO2",
+        "B": "H2O",
+        "C": "NaCl", 
+        "D": "O2"
       },
       "respostaCorreta": "B",
-      "materia": "Inglês",
+      "materia": "Química",
       "nivel": "facil",
-      "explicacao": "'Went' é o simple past do verbo irregular 'to go'."
+      "explicacao": "A água é composta por dois átomos de hidrogênio e um átomo de oxigênio (H₂O)."
     },
     {
-      "id": "lit_2",
-      "pergunta": "Qual figura de linguagem usa a negação para afirmar?",
+      "id": "4",
+      "pergunta": "Em que ano Moçambique tornou-se independente?",
       "opcoes": {
-        "A": "Metáfora",
-        "B": "Hipérbole",
-        "C": "Ironia",
-        "D": "Eufemismo"
+        "A": "1975",
+        "B": "1965",
+        "C": "1985",
+        "D": "1995"
       },
-      "respostaCorreta": "C",
-      "materia": "Literatura",
+      "respostaCorreta": "A", 
+      "materia": "História",
       "nivel": "medio",
-      "explicacao": "Na ironia, dizemos o oposto do que pensamos, geralmente com intenção crítica ou humorística."
+      "explicacao": "Moçambique tornou-se independente de Portugal em 25 de Junho de 1975."
     },
     {
-      "id": "ing_2",
-      "pergunta": "Qual o significado de 'commitment'?",
+      "id": "5",
+      "pergunta": "Qual é o resultado de 8 × (6 - 2) ÷ 4?",
       "opcoes": {
-        "A": "Comédia",
-        "B": "Comissão",
-        "C": "Compromisso",
-        "D": "Comunidade"
-      },
-      "respostaCorreta": "C",
-      "materia": "Inglês",
-      "nivel": "medio",
-      "explicacao": "'Commitment' significa compromisso, dedicação ou empenho."
-    },
-    {
-      "id": "lit_3",
-      "pergunta": "Quem escreveu 'Vidas Secas'?",
-      "opcoes": {
-        "A": "Jorge Amado",
-        "B": "Érico Veríssimo",
-        "C": "Graciliano Ramos",
-        "D": "Carlos Drummond de Andrade"
-      },
-      "respostaCorreta": "C",
-      "materia": "Literatura",
-      "nivel": "medio",
-      "explicacao": "Graciliano Ramos é o autor deste romance essencial do Modernismo brasileiro."
-    },
-
-    {
-      "id": "prog_1",
-      "pergunta": "O que significa HTML?",
-      "opcoes": {
-        "A": "Hyper Text Markup Language",
-        "B": "High Tech Modern Language",
-        "C": "Home Tool Markup Language",
-        "D": "Hyper Transfer Markup Language"
-      },
-      "respostaCorreta": "A",
-      "materia": "Programação",
-      "nivel": "facil",
-      "explicacao": "HTML é a linguagem de marcação padrão para páginas web."
-    },
-    {
-      "id": "prog_2",
-      "pergunta": "O que é uma variável em programação?",
-      "opcoes": {
-        "A": "Um comando de loop",
-        "B": "Um local de armazenamento na memória",
-        "C": "Um tipo de erro",
-        "D": "Um nome de função"
+        "A": "4",
+        "B": "8", 
+        "C": "12",
+        "D": "16"
       },
       "respostaCorreta": "B",
-      "materia": "Programação",
-      "nivel": "facil",
-      "explicacao": "Variável é um espaço na memória para armazenar dados."
-    },
-    {
-      "id": "prog_3",
-      "pergunta": "Qual linguagem é compilada?",
-      "opcoes": {
-        "A": "Python",
-        "B": "JavaScript",
-        "C": "Java",
-        "D": "PHP"
-      },
-      "respostaCorreta": "C",
-      "materia": "Programação",
+      "materia": "Matemática",
       "nivel": "medio",
-      "explicacao": "Java é uma linguagem compilada (em bytecode) e interpretada (pela JVM)."
-    },
-    {
-      "id": "prog_4",
-      "pergunta": "Qual estrutura de dados armazena pares chave-valor?",
-      "opcoes": {
-        "A": "Array",
-        "B": "Lista",
-        "C": "Stack",
-        "D": "Objeto/Mapa/Dicionário"
-      },
-      "respostaCorreta": "D",
-      "materia": "Programação",
-      "nivel": "medio",
-      "explicacao": "Objetos (em JS), Mapas (em Java/Kotlin) ou Dicionários (em Python) usam pares chave-valor."
-    },
-    {
-      "id": "prog_5",
-      "pergunta": "O que é Git?",
-      "opcoes": {
-        "A": "Linguagem de programação",
-        "B": "Banco de dados",
-        "C": "Sistema de controle de versão",
-        "D": "Editor de código"
-      },
-      "respostaCorreta": "C",
-      "materia": "Programação",
-      "nivel": "medio",
-      "explicacao": "Git é um sistema de controle de versão distribuído."
-    },
-    {
-      "id": "prog_6",
-      "pergunta": "O que é 'Herança' em POO?",
-      "opcoes": {
-        "A": "Múltiplas classes",
-        "B": "Compartilhar atributos e métodos",
-        "C": "Ocultar dados",
-        "D": "Criar um objeto"
-      },
-      "respostaCorreta": "B",
-      "materia": "Programação",
-      "nivel": "medio",
-      "explicacao": "Herança permite que uma classe herde propriedades de outra."
-    },
-    {
-      "id": "prog_7",
-      "pergunta": "O que é um 'bug'?",
-      "opcoes": {
-        "A": "Recurso extra",
-        "B": "Comando de loop",
-        "C": "Erro no código",
-        "D": "Ferramenta de debug"
-      },
-      "respostaCorreta": "C",
-      "materia": "Programação",
-      "nivel": "facil",
-      "explicacao": "Bug é um erro ou falha no código."
-    },
-    {
-      "id": "prog_8",
-      "pergunta": "Qual é o tipo de dado para 'Hello'?",
-      "opcoes": {
-        "A": "int",
-        "B": "float",
-        "C": "string",
-        "D": "boolean"
-      },
-      "respostaCorreta": "C",
-      "materia": "Programação",
-      "nivel": "facil",
-      "explicacao": "String é o tipo de dado para texto."
-    },
-    {
-      "id": "prog_9",
-      "pergunta": "O que é API?",
-      "opcoes": {
-        "A": "Linguagem de programação",
-        "B": "Interface de programa",
-        "C": "Banco de dados",
-        "D": "Protocolo de rede"
-      },
-      "respostaCorreta": "B",
-      "materia": "Programação",
-      "nivel": "medio",
-      "explicacao": "API significa Application Programming Interface."
-    },
-    {
-      "id": "prog_10",
-      "pergunta": "O que é SQL?",
-      "opcoes": {
-        "A": "Linguagem de programação",
-        "B": "Linguagem de consulta estruturada",
-        "C": "Framework",
-        "D": "Biblioteca"
-      },
-      "respostaCorreta": "B",
-      "materia": "Programação",
-      "nivel": "medio",
-      "explicacao": "SQL (Structured Query Language) é usada para gerenciar bancos de dados relacionais."
-    },
-
-    {
-      "id": "filos_1",
-      "pergunta": "Quem é considerado o pai da filosofia ocidental?",
-      "opcoes": {
-        "A": "Aristóteles",
-        "B": "Platão",
-        "C": "Sócrates",
-        "D": "Pitágoras"
-      },
-      "respostaCorreta": "C",
-      "materia": "Filosofia",
-      "nivel": "medio",
-      "explicacao": "Sócrates é considerado o fundador da filosofia ocidental, apesar de não ter deixado obras escritas."
-    },
-    {
-      "id": "filos_2",
-      "pergunta": "Qual é a principal obra de Platão?",
-      "opcoes": {
-        "A": "Ética a Nicômaco",
-        "B": "A República",
-        "C": "O Príncipe",
-        "D": "O Discurso do Método"
-      },
-      "respostaCorreta": "B",
-      "materia": "Filosofia",
-      "nivel": "medio",
-      "explicacao": "'A República' discute a justiça e a organização do estado ideal."
-    },
-    {
-      "id": "filos_3",
-      "pergunta": "O que René Descartes queria provar com a frase 'Penso, logo existo'?",
-      "opcoes": {
-        "A": "A existência de Deus.",
-        "B": "A inquestionável certeza da própria existência.",
-        "C": "A importância da lógica.",
-        "D": "A ilusão do mundo material."
-      },
-      "respostaCorreta": "B",
-      "materia": "Filosofia",
-      "nivel": "dificil",
-      "explicacao": "Busca um ponto de partida indubitável na sua filosofia racionalista: a certeza de que ele, como ser pensante, existe."
-    },
-    {
-      "id": "filos_4",
-      "pergunta": "Quem foi o principal pensador do Existencialismo?",
-      "opcoes": {
-        "A": "Immanuel Kant",
-        "B": "Friedrich Nietzsche",
-        "C": "Jean-Paul Sartre",
-        "D": "Thomas Hobbes"
-      },
-      "respostaCorreta": "C",
-      "materia": "Filosofia",
-      "nivel": "dificil",
-      "explicacao": "Jean-Paul Sartre, com a frase 'a existência precede a essência', é a figura central do Existencialismo moderno."
-    },
-    {
-      "id": "filos_5",
-      "pergunta": "Qual é a área da filosofia que estuda a natureza do conhecimento?",
-      "opcoes": {
-        "A": "Estética",
-        "B": "Metafísica",
-        "C": "Ética",
-        "D": "Epistemologia"
-      },
-      "respostaCorreta": "D",
-      "materia": "Filosofia",
-      "nivel": "medio",
-      "explicacao": "Epistemologia, ou Teoria do Conhecimento, estuda a origem, natureza e limites do saber humano."
+      "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
     }
   ]
 }
