@@ -1,0 +1,74 @@
+{
+  "perguntas": [
+    {
+      "id": "1",
+      "pergunta": "Qual é a capital de Moçambique?",
+      "opcoes": {
+        "A": "Maputo",
+        "B": "Beira", 
+        "C": "Nampula",
+        "D": "Quelimane"
+      },
+      "respostaCorreta": "A",
+      "materia": "Geografia",
+      "nivel": "facil",
+      "explicacao": "Maputo é a capital e maior cidade de Moçambique, localizada na baía de Maputo."
+    },
+    {
+      "id": "2",
+      "pergunta": "Quem escreveu 'Os Lusíadas'?",
+      "opcoes": {
+        "A": "Fernando Pessoa",
+        "B": "Luís de Camões",
+        "C": "Eça de Queirós",
+        "D": "José Saramago"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "'Os Lusíadas' é a obra épica de Luís de Camões, publicada em 1572."
+    },
+    {
+      "id": "3", 
+      "pergunta": "Qual é a fórmula química da água?",
+      "opcoes": {
+        "A": "CO2",
+        "B": "H2O",
+        "C": "NaCl", 
+        "D": "O2"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "facil",
+      "explicacao": "A água é composta por dois átomos de hidrogênio e um átomo de oxigênio (H₂O)."
+    },
+    {
+      "id": "4",
+      "pergunta": "Em que ano Moçambique tornou-se independente?",
+      "opcoes": {
+        "A": "1975",
+        "B": "1965",
+        "C": "1985",
+        "D": "1995"
+      },
+      "respostaCorreta": "A", 
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "Moçambique tornou-se independente de Portugal em 25 de Junho de 1975."
+    },
+    {
+      "id": "5",
+      "pergunta": "Qual é o resultado de 8 × (6 - 2) ÷ 4?",
+      "opcoes": {
+        "A": "4",
+        "B": "8", 
+        "C": "12",
+        "D": "16"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
+    }
+  ]
+}
