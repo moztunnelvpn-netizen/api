@@ -1,6 +1,5 @@
 {
   "perguntas": [
-    // MATEMÁTICA
     {
       "id": "math_1",
       "pergunta": "Qual é o valor de π aproximadamente?",
@@ -29,8 +28,6 @@
       "nivel": "medio",
       "explicacao": "A fórmula de Bhaskara resolve equações do segundo grau."
     },
-
-    // HISTÓRIA
     {
       "id": "hist_1",
       "pergunta": "Em que ano o Brasil foi descoberto?",
@@ -45,8 +42,6 @@
       "nivel": "facil",
       "explicacao": "Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500."
     },
-
-    // GEOGRAFIA
     {
       "id": "geo_1",
       "pergunta": "Qual é o maior país do mundo em área territorial?",
@@ -61,8 +56,6 @@
       "nivel": "facil",
       "explicacao": "A Rússia possui aproximadamente 17 milhões de km² de área."
     },
-
-    // CIÊNCIAS
     {
       "id": "cien_1",
       "pergunta": "Quantos planetas existem no sistema solar?",
@@ -77,8 +70,6 @@
       "nivel": "facil",
       "explicacao": "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
     },
-
-    // QUÍMICA
     {
       "id": "quim_1",
       "pergunta": "Qual é o símbolo químico do ouro?",
@@ -93,8 +84,6 @@
       "nivel": "facil",
       "explicacao": "Au vem da palavra latina 'Aurum', que significa ouro."
     },
-
-    // FÍSICA
     {
       "id": "fis_1",
       "pergunta": "Qual é a unidade de medida da força no SI?",
@@ -109,8 +98,6 @@
       "nivel": "medio",
       "explicacao": "Newton (N) é a unidade de força no Sistema Internacional."
     },
-
-    // BIOLOGIA
     {
       "id": "bio_1",
       "pergunta": "Qual organela é conhecida como 'usina de energia' da célula?",
@@ -125,8 +112,6 @@
       "nivel": "medio",
       "explicacao": "As mitocôndrias produzem ATP, a energia da célula."
     },
-
-    // LITERATURA
     {
       "id": "lit_1",
       "pergunta": "Quem escreveu 'Dom Casmurro'?",
@@ -141,8 +126,6 @@
       "nivel": "medio",
       "explicacao": "Machado de Assis é o autor desta obra-prima da literatura brasileira."
     },
-
-    // INGLÊS
     {
       "id": "ing_1",
       "pergunta": "Qual é o passado do verbo 'to go'?",
@@ -157,8 +140,6 @@
       "nivel": "facil",
       "explicacao": "'Went' é o simple past do verbo irregular 'to go'."
     },
-
-    // PROGRAMAÇÃO
     {
       "id": "prog_1",
       "pergunta": "O que significa HTML?",
@@ -173,8 +154,6 @@
       "nivel": "facil",
       "explicacao": "HTML é a linguagem de marcação padrão para páginas web."
     },
-
-    // FILOSOFIA
     {
       "id": "filos_1",
       "pergunta": "Quem é considerado o pai da filosofia ocidental?",
