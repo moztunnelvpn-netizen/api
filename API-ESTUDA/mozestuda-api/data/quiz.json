@@ -1,368 +1,524 @@
 {
   "perguntas": [
+    // ==================== MATEMÁTICA (25 perguntas) ====================
     {
-      "id": "math_1",
-      "pergunta": "Qual é o valor de π aproximadamente?",
-      "opcoes": {
-        "A": "3.14",
-        "B": "2.71", 
-        "C": "1.61",
-        "D": "4.20"
-      },
-      "respostaCorreta": "A",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "π (pi) é aproximadamente 3.14159, mas comumente arredondado para 3.14."
+      "id": "math_1", "pergunta": "Qual é o valor de π aproximadamente?", "opcoes": {"A":"3.14","B":"2.71","C":"1.61","D":"4.20"}, "respostaCorreta": "A", "materia": "Matemática", "nivel": "facil", "explicacao": "π (pi) é aproximadamente 3.14159."
     },
     {
-      "id": "math_2",
-      "pergunta": "Qual é a fórmula de Bhaskara?",
-      "opcoes": {
-        "A": "x = -b ± √(b² - 4ac) / 2a",
-        "B": "E = mc²",
-        "C": "a² = b² + c²",
-        "D": "V = πr²h"
-      },
-      "respostaCorreta": "A",
-      "materia": "Matemática",
-      "nivel": "medio",
-      "explicacao": "A fórmula de Bhaskara resolve equações do segundo grau."
+      "id": "math_2", "pergunta": "Qual é a fórmula de Bhaskara?", "opcoes": {"A":"x = -b ± √(b² - 4ac) / 2a","B":"E = mc²","C":"a² = b² + c²","D":"V = πr²h"}, "respostaCorreta": "A", "materia": "Matemática", "nivel": "medio", "explicacao": "Resolve equações do segundo grau."
     },
     {
-      "id": "math_3",
-      "pergunta": "Quanto é 7 × 8?",
-      "opcoes": {
-        "A": "54",
-        "B": "56",
-        "C": "58",
-        "D": "60"
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "7 × 8 = 56, uma das tabuadas básicas."
+      "id": "math_3", "pergunta": "Quanto é 7 × 8?", "opcoes": {"A":"54","B":"56","C":"58","D":"60"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "7 × 8 = 56."
     },
     {
-      "id": "math_4",
-      "pergunta": "Qual é a raiz quadrada de 144?",
-      "opcoes": {
-        "A": "11",
-        "B": "12",
-        "C": "13",
-        "D": "14"
-      },
-      "respostaCorreta": "B",
-      "materia": "Matemática",
-      "nivel": "facil",
-      "explicacao": "12 × 12 = 144, portanto √144 = 12."
+      "id": "math_4", "pergunta": "Qual é a raiz quadrada de 144?", "opcoes": {"A":"11","B":"12","C":"13","D":"14"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "12 × 12 = 144."
     },
     {
-      "id": "hist_1",
-      "pergunta": "Em que ano o Brasil foi descoberto?",
-      "opcoes": {
-        "A": "1492",
-        "B": "1500",
-        "C": "1520",
-        "D": "1450"
-      },
-      "respostaCorreta": "B",
-      "materia": "História",
-      "nivel": "facil",
-      "explicacao": "Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500."
+      "id": "math_5", "pergunta": "Quanto é 15% de 200?", "opcoes": {"A":"20","B":"30","C":"40","D":"50"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "15% de 200 = 0.15 × 200 = 30."
     },
     {
-      "id": "hist_2",
-      "pergunta": "Quem proclamou a Independência do Brasil?",
-      "opcoes": {
-        "A": "Dom Pedro I",
-        "B": "Dom Pedro II",
-        "C": "Dom João VI",
-        "D": "Tiradentes"
-      },
-      "respostaCorreta": "A",
-      "materia": "História",
-      "nivel": "facil",
-      "explicacao": "Dom Pedro I proclamou a independência em 7 de setembro de 1822."
+      "id": "math_6", "pergunta": "Qual é o próximo número na sequência: 2, 4, 8, 16, ...?", "opcoes": {"A":"24","B":"32","C":"64","D":"128"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "Cada número é multiplicado por 2: 16 × 2 = 32."
     },
     {
-      "id": "hist_3",
-      "pergunta": "Em que ano terminou a Segunda Guerra Mundial?",
-      "opcoes": {
-        "A": "1944",
-        "B": "1945",
-        "C": "1946",
-        "D": "1947"
-      },
-      "respostaCorreta": "B",
-      "materia": "História",
-      "nivel": "medio",
-      "explicacao": "A Segunda Guerra Mundial terminou em 2 de setembro de 1945."
+      "id": "math_7", "pergunta": "Qual é a área de um quadrado com lado 5cm?", "opcoes": {"A":"20cm²","B":"25cm²","C":"30cm²","D":"35cm²"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "Área = lado × lado = 5 × 5 = 25cm²."
     },
     {
-      "id": "geo_1",
-      "pergunta": "Qual é o maior país do mundo em área territorial?",
-      "opcoes": {
-        "A": "China",
-        "B": "Estados Unidos",
-        "C": "Rússia",
-        "D": "Canadá"
-      },
-      "respostaCorreta": "C",
-      "materia": "Geografia", 
-      "nivel": "facil",
-      "explicacao": "A Rússia possui aproximadamente 17 milhões de km² de área."
+      "id": "math_8", "pergunta": "Quanto é 3² + 4²?", "opcoes": {"A":"7","B":"12","C":"25","D":"49"}, "respostaCorreta": "C", "materia": "Matemática", "nivel": "facil", "explicacao": "3² = 9, 4² = 16, 9 + 16 = 25."
     },
     {
-      "id": "geo_2",
-      "pergunta": "Qual é o rio mais longo do mundo?",
-      "opcoes": {
-        "A": "Amazonas",
-        "B": "Nilo",
-        "C": "Yangtzé",
-        "D": "Mississippi"
-      },
-      "respostaCorreta": "A",
-      "materia": "Geografia",
-      "nivel": "medio",
-      "explicacao": "O Rio Amazonas tem aproximadamente 6.992 km de extensão."
+      "id": "math_9", "pergunta": "Qual é o MMC de 6 e 8?", "opcoes": {"A":"12","B":"24","C":"36","D":"48"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "MMC(6,8) = 24."
     },
     {
-      "id": "geo_3",
-      "pergunta": "Qual é a capital do Japão?",
-      "opcoes": {
-        "A": "Pequim",
-        "B": "Seul",
-        "C": "Tóquio",
-        "D": "Osaka"
-      },
-      "respostaCorreta": "C",
-      "materia": "Geografia",
-      "nivel": "facil",
-      "explicacao": "Tóquio é a capital e maior cidade do Japão."
+      "id": "math_10", "pergunta": "Qual é o MDC de 18 e 24?", "opcoes": {"A":"3","B":"6","C":"9","D":"12"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "MDC(18,24) = 6."
     },
     {
-      "id": "cien_1",
-      "pergunta": "Quantos planetas existem no sistema solar?",
-      "opcoes": {
-        "A": "7",
-        "B": "8",
-        "C": "9",
-        "D": "10"
-      },
-      "respostaCorreta": "B",
-      "materia": "Ciências",
-      "nivel": "facil",
-      "explicacao": "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
+      "id": "math_11", "pergunta": "Quanto é 0,5 em fração?", "opcoes": {"A":"1/8","B":"1/4","C":"1/3","D":"1/2"}, "respostaCorreta": "D", "materia": "Matemática", "nivel": "facil", "explicacao": "0,5 = 1/2."
     },
     {
-      "id": "cien_2",
-      "pergunta": "Qual é o maior osso do corpo humano?",
-      "opcoes": {
-        "A": "Fêmur",
-        "B": "Tíbia",
-        "C": "Úmero",
-        "D": "Fíbula"
-      },
-      "respostaCorreta": "A",
-      "materia": "Ciências",
-      "nivel": "medio",
-      "explicacao": "O fêmur é o maior e mais forte osso do corpo humano."
+      "id": "math_12", "pergunta": "Qual é o valor de x em: 2x + 5 = 15?", "opcoes": {"A":"3","B":"5","C":"7","D":"10"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "2x = 15 - 5, 2x = 10, x = 5."
     },
     {
-      "id": "quim_1",
-      "pergunta": "Qual é o símbolo químico do ouro?",
-      "opcoes": {
-        "A": "Ag",
-        "B": "Au",
-        "C": "Fe",
-        "D": "Cu"
-      },
-      "respostaCorreta": "B",
-      "materia": "Química",
-      "nivel": "facil",
-      "explicacao": "Au vem da palavra latina 'Aurum', que significa ouro."
+      "id": "math_13", "pergunta": "Qual é a fórmula da área do círculo?", "opcoes": {"A":"πr","B":"πr²","C":"2πr","D":"πd"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "Área = π × raio²."
     },
     {
-      "id": "quim_2",
-      "pergunta": "Qual é o gás mais abundante na atmosfera terrestre?",
-      "opcoes": {
-        "A": "Oxigênio",
-        "B": "Hélio",
-        "C": "Nitrogênio",
-        "D": "Dióxido de Carbono"
-      },
-      "respostaCorreta": "C",
-      "materia": "Química",
-      "nivel": "medio",
-      "explicacao": "O nitrogênio compõe cerca de 78% da atmosfera terrestre."
+      "id": "math_14", "pergunta": "Quanto é 1/4 + 1/2?", "opcoes": {"A":"1/6","B":"2/6","C":"3/4","D":"5/4"}, "respostaCorreta": "C", "materia": "Matemática", "nivel": "medio", "explicacao": "1/4 + 2/4 = 3/4."
     },
     {
-      "id": "fis_1",
-      "pergunta": "Qual é a unidade de medida da força no SI?",
-      "opcoes": {
-        "A": "Joule",
-        "B": "Watt",
-        "C": "Newton",
-        "D": "Pascal"
-      },
-      "respostaCorreta": "C",
-      "materia": "Física",
-      "nivel": "medio",
-      "explicacao": "Newton (N) é a unidade de força no Sistema Internacional."
+      "id": "math_15", "pergunta": "Qual é o resultado de 5!?", "opcoes": {"A":"60","B":"120","C":"240","D":"720"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "5! = 5 × 4 × 3 × 2 × 1 = 120."
     },
     {
-      "id": "fis_2",
-      "pergunta": "Qual é a velocidade da luz no vácuo?",
-      "opcoes": {
-        "A": "300.000 km/s",
-        "B": "150.000 km/s",
-        "C": "450.000 km/s",
-        "D": "600.000 km/s"
-      },
-      "respostaCorreta": "A",
-      "materia": "Física",
-      "nivel": "medio",
-      "explicacao": "A velocidade da luz no vácuo é de aproximadamente 299.792 km/s."
+      "id": "math_16", "pergunta": "Qual é a média de 10, 20 e 30?", "opcoes": {"A":"15","B":"20","C":"25","D":"30"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "(10 + 20 + 30) ÷ 3 = 20."
     },
     {
-      "id": "bio_1",
-      "pergunta": "Qual organela é conhecida como 'usina de energia' da célula?",
-      "opcoes": {
-        "A": "Núcleo",
-        "B": "Mitocôndria",
-        "C": "Ribossomo",
-        "D": "Complexo de Golgi"
-      },
-      "respostaCorreta": "B",
-      "materia": "Biologia",
-      "nivel": "medio",
-      "explicacao": "As mitocôndrias produzem ATP, a energia da célula."
+      "id": "math_17", "pergunta": "Quanto é 3/5 em porcentagem?", "opcoes": {"A":"30%","B":"50%","C":"60%","D":"75%"}, "respostaCorreta": "C", "materia": "Matemática", "nivel": "facil", "explicacao": "3/5 = 0,6 = 60%."
     },
     {
-      "id": "bio_2",
-      "pergunta": "Quantos cromossomos tem uma célula humana normal?",
-      "opcoes": {
-        "A": "23",
-        "B": "46",
-        "C": "48",
-        "D": "52"
-      },
-      "respostaCorreta": "B",
-      "materia": "Biologia",
-      "nivel": "medio",
-      "explicacao": "As células humanas têm 46 cromossomos (23 pares)."
+      "id": "math_18", "pergunta": "Qual é o perímetro de um retângulo 4cm x 6cm?", "opcoes": {"A":"16cm","B":"20cm","C":"24cm","D":"28cm"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "Perímetro = 2×(4+6) = 20cm."
     },
     {
-      "id": "lit_1",
-      "pergunta": "Quem escreveu 'Dom Casmurro'?",
-      "opcoes": {
-        "A": "José de Alencar",
-        "B": "Machado de Assis",
-        "C": "Lima Barreto",
-        "D": "Graciliano Ramos"
-      },
-      "respostaCorreta": "B",
-      "materia": "Literatura",
-      "nivel": "medio",
-      "explicacao": "Machado de Assis é o autor desta obra-prima da literatura brasileira."
+      "id": "math_19", "pergunta": "Quanto é 7² - 5²?", "opcoes": {"A":"14","B":"24","C":"34","D":"44"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "49 - 25 = 24."
     },
     {
-      "id": "lit_2",
-      "pergunta": "Qual destes é um romance de José de Alencar?",
-      "opcoes": {
-        "A": "O Cortiço",
-        "B": "Iracema",
-        "C": "O Mulato",
-        "D": "Memórias Póstumas"
-      },
-      "respostaCorreta": "B",
-      "materia": "Literatura",
-      "nivel": "medio",
-      "explicacao": "'Iracema' é uma das obras mais famosas de José de Alencar."
+      "id": "math_20", "pergunta": "Qual é o valor de 10³?", "opcoes": {"A":"100","B":"500","C":"1000","D":"5000"}, "respostaCorreta": "C", "materia": "Matemática", "nivel": "facil", "explicacao": "10³ = 10 × 10 × 10 = 1000."
     },
     {
-      "id": "ing_1",
-      "pergunta": "Qual é o passado do verbo 'to go'?",
-      "opcoes": {
-        "A": "goed",
-        "B": "went",
-        "C": "gone",
-        "D": "goes"
-      },
-      "respostaCorreta": "B",
-      "materia": "Inglês",
-      "nivel": "facil",
-      "explicacao": "'Went' é o simple past do verbo irregular 'to go'."
+      "id": "math_21", "pergunta": "Qual é a raiz cúbica de 27?", "opcoes": {"A":"2","B":"3","C":"4","D":"5"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "3 × 3 × 3 = 27."
     },
     {
-      "id": "ing_2",
-      "pergunta": "Como se diz 'obrigado' em inglês?",
-      "opcoes": {
-        "A": "Please",
-        "B": "Sorry",
-        "C": "Thank you",
-        "D": "Welcome"
-      },
-      "respostaCorreta": "C",
-      "materia": "Inglês",
-      "nivel": "facil",
-      "explicacao": "'Thank you' é a forma correta de dizer obrigado em inglês."
+      "id": "math_22", "pergunta": "Quanto é 0,25 em fração?", "opcoes": {"A":"1/8","B":"1/4","C":"1/3","D":"1/2"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "0,25 = 1/4."
     },
     {
-      "id": "prog_1",
-      "pergunta": "O que significa HTML?",
-      "opcoes": {
-        "A": "Hyper Text Markup Language",
-        "B": "High Tech Modern Language",
-        "C": "Home Tool Markup Language",
-        "D": "Hyper Transfer Markup Language"
-      },
-      "respostaCorreta": "A",
-      "materia": "Programação",
-      "nivel": "facil",
-      "explicacao": "HTML é a linguagem de marcação padrão para páginas web."
+      "id": "math_23", "pergunta": "Qual é o valor de 2⁻²?", "opcoes": {"A":"-4","B":"0,25","C":"0,5","D":"4"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "2⁻² = 1/2² = 1/4 = 0,25."
     },
     {
-      "id": "prog_2",
-      "pergunta": "Qual linguagem é usada para estilizar páginas web?",
-      "opcoes": {
-        "A": "HTML",
-        "B": "JavaScript",
-        "C": "Python",
-        "D": "CSS"
-      },
-      "respostaCorreta": "D",
-      "materia": "Programação",
-      "nivel": "facil",
-      "explicacao": "CSS (Cascading Style Sheets) é usado para estilizar páginas web."
+      "id": "math_24", "pergunta": "Qual é a soma dos ângulos internos de um triângulo?", "opcoes": {"A":"90°","B":"180°","C":"270°","D":"360°"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "facil", "explicacao": "Sempre 180° em qualquer triângulo."
     },
     {
-      "id": "filos_1",
-      "pergunta": "Quem é considerado o pai da filosofia ocidental?",
-      "opcoes": {
-        "A": "Aristóteles",
-        "B": "Platão",
-        "C": "Sócrates",
-        "D": "Pitágoras"
-      },
-      "respostaCorreta": "C",
-      "materia": "Filosofia",
-      "nivel": "medio",
-      "explicacao": "Sócrates é considerado o fundador da filosofia ocidental."
+      "id": "math_25", "pergunta": "Quanto é log₁₀100?", "opcoes": {"A":"1","B":"2","C":"5","D":"10"}, "respostaCorreta": "B", "materia": "Matemática", "nivel": "medio", "explicacao": "10² = 100, então log₁₀100 = 2."
+    },
+
+    // ==================== HISTÓRIA (20 perguntas) ====================
+    {
+      "id": "hist_1", "pergunta": "Em que ano o Brasil foi descoberto?", "opcoes": {"A":"1492","B":"1500","C":"1520","D":"1450"}, "respostaCorreta": "B", "materia": "História", "nivel": "facil", "explicacao": "Pedro Álvares Cabral em 22 de abril de 1500."
     },
     {
-      "id": "filos_2",
-      "pergunta": "Qual filósofo disse 'Penso, logo existo'?",
-      "opcoes": {
-        "A": "Platão",
-        "B": "Aristóteles",
-        "C": "Descartes",
-        "D": "Kant"
-      },
-      "respostaCorreta": "C",
-      "materia": "Filosofia",
-      "nivel": "medio",
-      "explicacao": "René Descartes é o autor da famosa frase 'Cogito, ergo sum'."
+      "id": "hist_2", "pergunta": "Quem proclamou a Independência do Brasil?", "opcoes": {"A":"Dom Pedro I","B":"Dom Pedro II","C":"Dom João VI","D":"Tiradentes"}, "respostaCorreta": "A", "materia": "História", "nivel": "facil", "explicacao": "Dom Pedro I em 7 de setembro de 1822."
+    },
+    {
+      "id": "hist_3", "pergunta": "Em que ano terminou a Segunda Guerra Mundial?", "opcoes": {"A":"1944","B":"1945","C":"1946","D":"1947"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Terminou em 2 de setembro de 1945."
+    },
+    {
+      "id": "hist_4", "pergunta": "Quem foi o primeiro presidente do Brasil?", "opcoes": {"A":"Getúlio Vargas","B":"Juscelino Kubitschek","C":"Marechal Deodoro","D":"Prudente de Morais"}, "respostaCorreta": "C", "materia": "História", "nivel": "medio", "explicacao": "Marechal Deodoro da Fonseca em 1889."
+    },
+    {
+      "id": "hist_5", "pergunta": "Em que ano foi proclamada a República no Brasil?", "opcoes": {"A":"1822","B":"1889","C":"1900","D":"1922"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "15 de novembro de 1889."
+    },
+    {
+      "id": "hist_6", "pergunta": "Quem descobriu o caminho marítimo para as Índias?", "opcoes": {"A":"Cristóvão Colombo","B":"Pedro Álvares Cabral","C":"Vasco da Gama","D":"Fernão de Magalhães"}, "respostaCorreta": "C", "materia": "História", "nivel": "medio", "explicacao": "Vasco da Gama em 1498."
+    },
+    {
+      "id": "hist_7", "pergunta": "Qual foi o período da Ditadura Militar no Brasil?", "opcoes": {"A":"1950-1960","B":"1964-1985","C":"1970-1980","D":"1980-1990"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "De 1964 a 1985."
+    },
+    {
+      "id": "hist_8", "pergunta": "Quem foi Tiradentes?", "opcoes": {"A":"Um pintor","B":"Um inconfidente","C":"Um escritor","D":"Um presidente"}, "respostaCorreta": "B", "materia": "História", "nivel": "facil", "explicacao": "Líder da Inconfidência Mineira."
+    },
+    {
+      "id": "hist_9", "pergunta": "Em que ano foi inaugurada Brasília?", "opcoes": {"A":"1950","B":"1960","C":"1970","D":"1980"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "21 de abril de 1960."
+    },
+    {
+      "id": "hist_10", "pergunta": "Quem foi o principal líder da Revolução Francesa?", "opcoes": {"A":"Napoleão","B":"Robespierre","C":"Luis XVI","D":"Voltaire"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Maximilien de Robespierre."
+    },
+    {
+      "id": "hist_11", "pergunta": "Qual império era liderado por Júlio César?", "opcoes": {"A":"Grego","B":"Romano","C":"Egípcio","D":"Persa"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Império Romano."
+    },
+    {
+      "id": "hist_12", "pergunta": "Em que século o Brasil foi colonizado?", "opcoes": {"A":"XV","B":"XVI","C":"XVII","D":"XVIII"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Século XVI (1500)."
+    },
+    {
+      "id": "hist_13", "pergunta": "Quem escreveu 'Os Sertões'?", "opcoes": {"A":"Machado de Assis","B":"Euclides da Cunha","C":"Lima Barreto","D":"Graciliano Ramos"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Euclides da Cunha."
+    },
+    {
+      "id": "hist_14", "pergunta": "Qual foi a capital do Brasil antes de Brasília?", "opcoes": {"A":"São Paulo","B":"Rio de Janeiro","C":"Salvador","D":"Belo Horizonte"}, "respostaCorreta": "B", "materia": "História", "nivel": "facil", "explicacao": "Rio de Janeiro."
+    },
+    {
+      "id": "hist_15", "pergunta": "Quem foi Zumbi dos Palmares?", "opcoes": {"A":"Um rei português","B":"Líder quilombola","C":"Presidente brasileiro","D":"Escritor"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Líder do Quilombo dos Palmares."
+    },
+    {
+      "id": "hist_16", "pergunta": "Em que ano ocorreu a Abolição da Escravatura?", "opcoes": {"A":"1850","B":"1871","C":"1888","D":"1890"}, "respostaCorreta": "C", "materia": "História", "nivel": "facil", "explicacao": "Lei Áurea em 13 de maio de 1888."
+    },
+    {
+      "id": "hist_17", "pergunta": "Qual civilização construiu as pirâmides?", "opcoes": {"A":"Gregos","B":"Romanos","C":"Egípcios","D":"Maias"}, "respostaCorreta": "C", "materia": "História", "nivel": "facil", "explicacao": "Civilização Egípcia."
+    },
+    {
+      "id": "hist_18", "pergunta": "Quem pintou 'Mona Lisa'?", "opcoes": {"A":"Van Gogh","B":"Picasso","C":"Leonardo da Vinci","D":"Michelangelo"}, "respostaCorreta": "C", "materia": "História", "nivel": "facil", "explicacao": "Leonardo da Vinci."
+    },
+    {
+      "id": "hist_19", "pergunta": "Qual foi o primeiro homem no espaço?", "opcoes": {"A":"Neil Armstrong","B":"Yuri Gagarin","C":"John Glenn","D":"Buzz Aldrin"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "Yuri Gagarin em 1961."
+    },
+    {
+      "id": "hist_20", "pergunta": "Em que ano caiu o Muro de Berlim?", "opcoes": {"A":"1987","B":"1989","C":"1991","D":"1993"}, "respostaCorreta": "B", "materia": "História", "nivel": "medio", "explicacao": "9 de novembro de 1989."
+    },
+
+    // ==================== GEOGRAFIA (20 perguntas) ====================
+    {
+      "id": "geo_1", "pergunta": "Qual é o maior país do mundo em área?", "opcoes": {"A":"China","B":"EUA","C":"Rússia","D":"Canadá"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "Rússia: ~17 milhões km²."
+    },
+    {
+      "id": "geo_2", "pergunta": "Qual é o rio mais longo do mundo?", "opcoes": {"A":"Amazonas","B":"Nilo","C":"Yangtzé","D":"Mississippi"}, "respostaCorreta": "A", "materia": "Geografia", "nivel": "medio", "explicacao": "Rio Amazonas: ~6.992 km."
+    },
+    {
+      "id": "geo_3", "pergunta": "Qual é a capital do Japão?", "opcoes": {"A":"Pequim","B":"Seul","C":"Tóquio","D":"Osaka"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "Tóquio."
+    },
+    {
+      "id": "geo_4", "pergunta": "Qual é o maior oceano?", "opcoes": {"A":"Atlântico","B":"Índico","C":"Pacífico","D":"Ártico"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "Oceano Pacífico."
+    },
+    {
+      "id": "geo_5", "pergunta": "Qual é o ponto mais alto da Terra?", "opcoes": {"A":"Monte Everest","B":"K2","C":"Monte Kilimanjaro","D":"Aconcágua"}, "respostaCorreta": "A", "materia": "Geografia", "nivel": "facil", "explicacao": "Monte Everest: 8.848m."
+    },
+    {
+      "id": "geo_6", "pergunta": "Quantos continentes existem?", "opcoes": {"A":"5","B":"6","C":"7","D":"8"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "facil", "explicacao": "América, Europa, Ásia, África, Oceania, Antártida."
+    },
+    {
+      "id": "geo_7", "pergunta": "Qual é o maior deserto do mundo?", "opcoes": {"A":"Saara","B":"Arábico","C":"Gobi","D":"Antártida"}, "respostaCorreta": "A", "materia": "Geografia", "nivel": "medio", "explicacao": "Deserto do Saara."
+    },
+    {
+      "id": "geo_8", "pergunta": "Qual país tem formato de bota?", "opcoes": {"A":"França","B":"Espanha","C":"Itália","D":"Grécia"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "Itália."
+    },
+    {
+      "id": "geo_9", "pergunta": "Qual é a capital da Austrália?", "opcoes": {"A":"Sydney","B":"Melbourne","C":"Canberra","D":"Perth"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "medio", "explicacao": "Canberra."
+    },
+    {
+      "id": "geo_10", "pergunta": "Qual país é conhecido como 'Terra do Sol Nascente'?", "opcoes": {"A":"China","B":"Coreia","C":"Japão","D":"Tailândia"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "Japão."
+    },
+    {
+      "id": "geo_11", "pergunta": "Qual é o menor país do mundo?", "opcoes": {"A":"Mônaco","B":"Vaticano","C":"San Marino","D":"Liechtenstein"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "medio", "explicacao": "Vaticano: 0,44 km²."
+    },
+    {
+      "id": "geo_12", "pergunta": "Qual rio corta o Egito?", "opcoes": {"A":"Amazonas","B":"Nilo","C":"Eufrates","D":"Ganges"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "facil", "explicacao": "Rio Nilo."
+    },
+    {
+      "id": "geo_13", "pergunta": "Qual montanha fica entre França e Espanha?", "opcoes": {"A":"Alpes","B":"Pirineus","C":"Apeninos","D":"Cárpatos"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "medio", "explicacao": "Pirineus."
+    },
+    {
+      "id": "geo_14", "pergunta": "Qual é a capital do Canadá?", "opcoes": {"A":"Toronto","B":"Vancouver","C":"Ottawa","D":"Montreal"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "medio", "explicacao": "Ottawa."
+    },
+    {
+      "id": "geo_15", "pergunta": "Qual país tem a maior população?", "opcoes": {"A":"Índia","B":"EUA","C":"China","D":"Indonésia"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "China: ~1,4 bilhão."
+    },
+    {
+      "id": "geo_16", "pergunta": "Qual é o clima predominante no Brasil?", "opcoes": {"A":"Desértico","B":"Tropical","C":"Polar","D":"Temperado"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "facil", "explicacao": "Clima tropical."
+    },
+    {
+      "id": "geo_17", "pergunta": "Qual cidade é conhecida como 'Big Apple'?", "opcoes": {"A":"Los Angeles","B":"Chicago","C":"Nova York","D":"Miami"}, "respostaCorreta": "C", "materia": "Geografia", "nivel": "facil", "explicacao": "Nova York."
+    },
+    {
+      "id": "geo_18", "pergunta": "Qual país tem a bandeira com maple leaf?", "opcoes": {"A":"EUA","B":"Canadá","C":"Austrália","D":"Reino Unido"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "facil", "explicacao": "Canadá."
+    },
+    {
+      "id": "geo_19", "pergunta": "Qual é o maior lago da América do Sul?", "opcoes": {"A":"Lagoa dos Patos","B":"Lago Titicaca","C":"Lago Maracaibo","D":"Lago de Itaipu"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "medio", "explicacao": "Lago Titicaca."
+    },
+    {
+      "id": "geo_20", "pergunta": "Qual cordilheira fica na América do Sul?", "opcoes": {"A":"Himalaia","B":"Andes","C":"Alpes","D":"Montanhas Rochosas"}, "respostaCorreta": "B", "materia": "Geografia", "nivel": "facil", "explicacao": "Cordilheira dos Andes."
+    },
+
+    // ==================== CIÊNCIAS (15 perguntas) ====================
+    {
+      "id": "cien_1", "pergunta": "Quantos planetas no sistema solar?", "opcoes": {"A":"7","B":"8","C":"9","D":"10"}, "respostaCorreta": "B", "materia": "Ciências", "nivel": "facil", "explicacao": "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano, Netuno."
+    },
+    {
+      "id": "cien_2", "pergunta": "Qual é o maior osso humano?", "opcoes": {"A":"Fêmur","B":"Tíbia","C":"Úmero","D":"Fíbula"}, "respostaCorreta": "A", "materia": "Ciências", "nivel": "medio", "explicacao": "Fêmur."
+    },
+    {
+      "id": "cien_3", "pergunta": "Qual gás as plantas absorvem?", "opcoes": {"A":"Oxigênio","B":"Nitrogênio","C":"Dióxido de Carbono","D":"Hélio"}, "respostaCorreta": "C", "materia": "Ciências", "nivel": "facil", "explicacao": "CO₂ na fotossíntese."
+    },
+    {
+      "id": "cien_4", "pergunta": "Quantos elementos na tabela periódica?", "opcoes": {"A":"92","B":"108","C":"118","D":"126"}, "respostaCorreta": "C", "materia": "Ciências", "nivel": "medio", "explicacao": "118 elementos."
+    },
+    {
+      "id": "cien_5", "pergunta": "Qual é a velocidade do som?", "opcoes": {"A":"340 m/s","B":"500 m/s","C":"1000 m/s","D":"300.000 km/s"}, "respostaCorreta": "A", "materia": "Ciências", "nivel": "medio", "explicacao": "~340 m/s no ar."
+    },
+    {
+      "id": "cien_6", "pergunta": "Qual planeta é conhecido como 'Planeta Vermelho'?", "opcoes": {"A":"Vênus","B":"Marte","C":"Júpiter","D":"Saturno"}, "respostaCorreta": "B", "materia": "Ciências", "nivel": "facil", "explicacao": "Marte."
+    },
+    {
+      "id": "cien_7", "pergunta": "Quantos litros de sangue tem um adulto?", "opcoes": {"A":"3-4L","B":"5-6L","C":"7-8L","D":"9-10L"}, "respostaCorreta": "B", "materia": "Ciências", "nivel": "medio", "explicacao": "5-6 litros."
+    },
+    {
+      "id": "cien_8", "pergunta": "Qual é a unidade básica da vida?", "opcoes": {"A":"Átomo","B":"Molécula","C":"Célula","D":"Tecido"}, "respostaCorreta": "C", "materia": "Ciências", "nivel": "facil", "explicacao": "Célula."
+    },
+    {
+      "id": "cien_9", "pergunta": "Qual metal é líquido em temperatura ambiente?", "opcoes": {"A":"Ouro","B":"Prata","C":"Mercúrio","D":"Cobre"}, "respostaCorreta": "C", "materia": "Ciências", "nivel": "facil", "explicacao": "Mercúrio."
+    },
+    {
+      "id": "cien_10", "pergunta": "Quantos cromossomos humanos?", "opcoes": {"A":"23","B":"46","C":"48","D":"52"}, "respostaCorreta": "B", "materia": "Ciências", "nivel": "medio", "explicacao": "46 cromossomos (23 pares)."
+    },
+    {
+      "id": "cien_11", "pergunta": "Qual é o pH da água pura?", "opcoes": {"A":"5","B":"6","C":"7","D":"8"}, "respostaCorreta": "C", "materia": "Ciências", "nivel": "medio", "explicacao": "pH 7 (neutro)."
+    },
+    {
+      "id": "cien_12", "pergunta": "Qual planeta tem anéis?", "opcoes": {"A":"Júpiter","B":"Saturno","C":"Urano","D":"Todos anteriores"}, "respostaCorreta": "D", "materia": "Ciências", "nivel": "medio", "explicacao": "Júpiter, Saturno, Urano e Netuno têm anéis."
+    },
+    {
+      "id": "cien_13", "pergunta": "Quantos ossos no corpo humano?", "opcoes": {"A":"156","B":"206","C":"256","D":"306"}, "respostaCorreta": "B", "materia": "Ciências", "nivel": "medio", "explicacao": "206 ossos."
+    },
+    {
+      "id": "cien_14", "pergunta": "Qual é o símbolo do oxigênio?", "opcoes": {"A":"Ox","B":"O","C":"O₂","D":"Oxg"}, "respostaCorreta": "B", "materia": "Ciências", "nivel": "facil", "explicacao": "O."
+    },
+    {
+      "id": "cien_15", "pergunta": "Qual célula transporta oxigênio?", "opcoes": {"A":"Plaqueta","B":"Glóbulo branco","C":"Glóbulo vermelho","D":"Neurônio"}, "respostaCorreta": "C", "materia": "Ciências", "nivel": "facil", "explicacao": "Hemácias (glóbulos vermelhos)."
+    },
+
+    // ==================== QUÍMICA (15 perguntas) ====================
+    {
+      "id": "quim_1", "pergunta": "Qual é o símbolo do ouro?", "opcoes": {"A":"Ag","B":"Au","C":"Fe","D":"Cu"}, "respostaCorreta": "B", "materia": "Química", "nivel": "facil", "explicacao": "Au (Aurum)."
+    },
+    {
+      "id": "quim_2", "pergunta": "Qual gás é mais abundante?", "opcoes": {"A":"Oxigênio","B":"Hélio","C":"Nitrogênio","D":"CO₂"}, "respostaCorreta": "C", "materia": "Química", "nivel": "medio", "explicacao": "Nitrogênio: 78% da atmosfera."
+    },
+    {
+      "id": "quim_3", "pergunta": "Qual é a fórmula da água?", "opcoes": {"A":"H₂O","B":"CO₂","C":"NaCl","D":"O₂"}, "respostaCorreta": "A", "materia": "Química", "nivel": "facil", "explicacao": "H₂O."
+    },
+    {
+      "id": "quim_4", "pergunta": "Qual é o pH do limão?", "opcoes": {"A":"2","B":"5","C":"7","D":"9"}, "respostaCorreta": "A", "materia": "Química", "nivel": "medio", "explicacao": "pH ~2 (ácido)."
+    },
+    {
+      "id": "quim_5", "pergunta": "Quantos elétrons cabem na 1ª camada?", "opcoes": {"A":"2","B":"8","C":"18","D":"32"}, "respostaCorreta": "A", "materia": "Química", "nivel": "medio", "explicacao": "Camada K: 2 elétrons."
+    },
+    {
+      "id": "quim_6", "pergunta": "Qual é o metal mais condutor?", "opcoes": {"A":"Ouro","B":"Prata","C":"Cobre","D":"Alumínio"}, "respostaCorreta": "B", "materia": "Química", "nivel": "medio", "explicacao": "Prata."
+    },
+    {
+      "id": "quim_7", "pergunta": "Qual é a massa atômica do hidrogênio?", "opcoes": {"A":"1","B":"2","C":"4","D":"16"}, "respostaCorreta": "A", "materia": "Química", "nivel": "facil", "explicacao": "~1 u."
+    },
+    {
+      "id": "quim_8", "pergunta": "O que significa NaCl?", "opcoes": {"A":"Água","B":"Sal","C":"Açúcar","D":"Vinagre"}, "respostaCorreta": "B", "materia": "Química", "nivel": "facil", "explicacao": "Cloreto de sódio (sal)."
+    },
+    {
+      "id": "quim_9", "pergunta": "Qual elemento tem símbolo 'K'?", "opcoes": {"A":"Potássio","B":"Cálcio","C":"Fósforo","D":"Silício"}, "respostaCorreta": "A", "materia": "Química", "nivel": "medio", "explicacao": "Potássio (Kalium)."
+    },
+    {
+      "id": "quim_10", "pergunta": "Quantos prótons tem o oxigênio?", "opcoes": {"A":"6","B":"8","C":"10","D":"16"}, "respostaCorreta": "B", "materia": "Química", "nivel": "medio", "explicacao": "Número atômico 8."
+    },
+    {
+      "id": "quim_11", "pergunta": "Qual é o gás do riso?", "opcoes": {"A":"CO₂","B":"N₂O","C":"O₂","D":"He"}, "respostaCorreta": "B", "materia": "Química", "nivel": "medio", "explicacao": "Óxido nitroso (N₂O)."
+    },
+    {
+      "id": "quim_12", "pergunta": "Qual é o estado da água a 100°C?", "opcoes": {"A":"Sólido","B":"Líquido","C":"Gasoso","D":"Plasma"}, "respostaCorreta": "C", "materia": "Química", "nivel": "facil", "explicacao": "Vapor (ebulição)."
+    },
+    {
+      "id": "quim_13", "pergunta": "Qual metal é usado em termômetros?", "opcoes": {"A":"Ouro","B":"Prata","C":"Mercúrio","D":"Chumbo"}, "respostaCorreta": "C", "materia": "Química", "nivel": "facil", "explicacao": "Mercúrio."
+    },
+    {
+      "id": "quim_14", "pergunta": "Quantos elementos naturais?", "opcoes": {"A":"82","B":"92","C":"102","D":"112"}, "respostaCorreta": "B", "materia": "Química", "nivel": "medio", "explicacao": "92 elementos naturais."
+    },
+    {
+      "id": "quim_15", "pergunta": "Qual é o gás nobre mais leve?", "opcoes": {"A":"Hélio","B":"Neônio","C":"Argônio","D":"Xenônio"}, "respostaCorreta": "A", "materia": "Química", "nivel": "medio", "explicacao": "Hélio."
+    },
+
+    // ==================== FÍSICA (15 perguntas) ====================
+    {
+      "id": "fis_1", "pergunta": "Qual é a unidade de força?", "opcoes": {"A":"Joule","B":"Watt","C":"Newton","D":"Pascal"}, "respostaCorreta": "C", "materia": "Física", "nivel": "medio", "explicacao": "Newton (N)."
+    },
+    {
+      "id": "fis_2", "pergunta": "Qual é a velocidade da luz?", "opcoes": {"A":"300.000 km/s","B":"150.000 km/s","C":"450.000 km/s","D":"600.000 km/s"}, "respostaCorreta": "A", "materia": "Física", "nivel": "medio", "explicacao": "~300.000 km/s."
+    },
+    {
+      "id": "fis_3", "pergunta": "Quem formulou a teoria da relatividade?", "opcoes": {"A":"Newton","B":"Einstein","C":"Galileu","D":"Tesla"}, "respostaCorreta": "B", "materia": "Física", "nivel": "facil", "explicacao": "Albert Einstein."
+    },
+    {
+      "id": "fis_4", "pergunta": "Qual é a aceleração da gravidade?", "opcoes": {"A":"5 m/s²","B":"9,8 m/s²","C":"15 m/s²","D":"20 m/s²"}, "respostaCorreta": "B", "materia": "Física", "nivel": "facil", "explicacao": "~9,8 m/s² na Terra."
+    },
+    {
+      "id": "fis_5", "pergunta": "O que mede o volt?", "opcoes": {"A":"Corrente","B":"Tensão","C":"Resistência","D":"Potência"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "Tensão elétrica."
+    },
+    {
+      "id": "fis_6", "pergunta": "Qual é a unidade de corrente?", "opcoes": {"A":"Volt","B":"Ampère","C":"Ohm","D":"Watt"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "Ampère (A)."
+    },
+    {
+      "id": "fis_7", "pergunta": "Quantas leis de Newton existem?", "opcoes": {"A":"1","B":"2","C":"3","D":"4"}, "respostaCorreta": "C", "materia": "Física", "nivel": "facil", "explicacao": "Três leis."
+    },
+    {
+      "id": "fis_8", "pergunta": "O que é measured pelo watt?", "opcoes": {"A":"Força","B":"Potência","C":"Energia","D":"Velocidade"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "Potência."
+    },
+    {
+      "id": "fis_9", "pergunta": "Qual é a fórmula da energia?", "opcoes": {"A":"E=mc","B":"E=mc²","C":"E=mv","D":"E=mv²"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "E=mc² (Einstein)."
+    },
+    {
+      "id": "fis_10", "pergunta": "Qual fenômeno explica o arco-íris?", "opcoes": {"A":"Refração","B":"Reflexão","C":"Dispersão","D":"Difração"}, "respostaCorreta": "C", "materia": "Física", "nivel": "medio", "explicacao": "Dispersão da luz."
+    },
+    {
+      "id": "fis_11", "pergunta": "O que é a inércia?", "opcoes": {"A":"Resistência à mudança","B":"Força centrífuga","C":"Energia potencial","D":"Velocidade angular"}, "respostaCorreta": "A", "materia": "Física", "nivel": "medio", "explicacao": "1ª lei de Newton."
+    },
+    {
+      "id": "fis_12", "pergunta": "Qual é a unidade de pressão?", "opcoes": {"A":"Newton","B":"Pascal","C":"Joule","D":"Watt"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "Pascal (Pa)."
+    },
+    {
+      "id": "fis_13", "pergunta": "O que é a fusão nuclear?", "opcoes": {"A":"Quebra de átomos","B":"União de átomos","C":"Emissão de elétrons","D":"Absorção de nêutrons"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "União de núcleos atômicos."
+    },
+    {
+      "id": "fis_14", "pergunta": "Qual partícula tem carga positiva?", "opcoes": {"A":"Elétron","B":"Próton","C":"Nêutron","D":"Fóton"}, "respostaCorreta": "B", "materia": "Física", "nivel": "facil", "explicacao": "Próton."
+    },
+    {
+      "id": "fis_15", "pergunta": "O que é um supercondutor?", "opcoes": {"A":"Material que conduz calor","B":"Material sem resistência","C":"Material magnético","D":"Material isolante"}, "respostaCorreta": "B", "materia": "Física", "nivel": "medio", "explicacao": "Resistência elétrica zero."
+    },
+
+    // ==================== BIOLOGIA (15 perguntas) ====================
+    {
+      "id": "bio_1", "pergunta": "Qual organela produz energia?", "opcoes": {"A":"Núcleo","B":"Mitocôndria","C":"Ribossomo","D":"Complexo de Golgi"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "Mitocôndria (ATP)."
+    },
+    {
+      "id": "bio_2", "pergunta": "Quantos cromossomos humanos?", "opcoes": {"A":"23","B":"46","C":"48","D":"52"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "46 cromossomos."
+    },
+    {
+      "id": "bio_3", "pergunta": "Qual é o pai da genética?", "opcoes": {"A":"Darwin","B":"Mendel","C":"Pasteur","D":"Linnaeus"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "Gregor Mendel."
+    },
+    {
+      "id": "bio_4", "pergunta": "O que é DNA?", "opcoes": {"A":"Proteína","B":"Açúcar","C":"Ácido nucleico","D":"Lipídio"}, "respostaCorreta": "C", "materia": "Biologia", "nivel": "facil", "explicacao": "Ácido desoxirribonucleico."
+    },
+    {
+      "id": "bio_5", "pergunta": "Qual reino inclui cogumelos?", "opcoes": {"A":"Animal","B":"Vegetal","C":"Fungi","D":"Protista"}, "respostaCorreta": "C", "materia": "Biologia", "nivel": "medio", "explicacao": "Reino Fungi."
+    },
+    {
+      "id": "bio_6", "pergunta": "Quantas câmaras tem coração humano?", "opcoes": {"A":"2","B":"3","C":"4","D":"5"}, "respostaCorreta": "C", "materia": "Biologia", "nivel": "facil", "explicacao": "2 átrios + 2 ventrículos."
+    },
+    {
+      "id": "bio_7", "pergunta": "Qual vitamina produzimos com sol?", "opcoes": {"A":"A","B":"C","C":"D","D":"E"}, "respostaCorreta": "C", "materia": "Biologia", "nivel": "facil", "explicacao": "Vitamina D."
+    },
+    {
+      "id": "bio_8", "pergunta": "O que é fotossíntese?", "opcoes": {"A":"Produção de energia","B":"Produção de alimento","C":"Respiração","D":"Digestão"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "facil", "explicacao": "Plantas produzem glicose."
+    },
+    {
+      "id": "bio_9", "pergunta": "Qual é o maior órgão humano?", "opcoes": {"A":"Fígado","B":"Coração","C":"Pele","D":"Intestino"}, "respostaCorreta": "C", "materia": "Biologia", "nivel": "facil", "explicacao": "Pele."
+    },
+    {
+      "id": "bio_10", "pergunta": "Quantos sistemas no corpo humano?", "opcoes": {"A":"8","B":"10","C":"12","D":"14"}, "respostaCorreta": "C", "materia": "Biologia", "nivel": "medio", "explicacao": "12 sistemas principais."
+    },
+    {
+      "id": "bio_11", "pergunta": "O que são hemácias?", "opcoes": {"A":"Glóbulos brancos","B":"Glóbulos vermelhos","C":"Plaquetas","D":"Neurônios"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "Transportam oxigênio."
+    },
+    {
+      "id": "bio_12", "pergunta": "Qual hormônio controla glicose?", "opcoes": {"A":"Adrenalina","B":"Insulina","C":"Estrogênio","D":"Testosterona"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "Insulina."
+    },
+    {
+      "id": "bio_13", "pergunta": "Quantos pares de nervos cranianos?", "opcoes": {"A":"10","B":"12","C":"14","D":"16"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "12 pares."
+    },
+    {
+      "id": "bio_14", "pergunta": "O que é meiose?", "opcoes": {"A":"Divisão celular","B":"Produção gametas","C":"Crescimento","D":"Reparo tecidual"}, "respostaCorreta": "B", "materia": "Biologia", "nivel": "medio", "explicacao": "Produção de células sexuais."
+    },
+    {
+      "id": "bio_15", "pergunta": "Qual animal é marsupial?", "opcoes": {"A":"Canguru","B":"Golfinho","C":"Elefante","D":"Tigre"}, "respostaCorreta": "A", "materia": "Biologia", "nivel": "facil", "explicacao": "Canguru (bolsa marsupial)."
+    },
+
+    // ==================== LITERATURA (15 perguntas) ====================
+    {
+      "id": "lit_1", "pergunta": "Quem escreveu 'Dom Casmurro'?", "opcoes": {"A":"José de Alencar","B":"Machado de Assis","C":"Lima Barreto","D":"Graciliano Ramos"}, "respostaCorreta": "B", "materia": "Literatura", "nivel": "medio", "explicacao": "Machado de Assis."
+    },
+    {
+      "id": "lit_2", "pergunta": "Qual romance é de José de Alencar?", "opcoes": {"A":"O Cortiço","B":"Iracema","C":"O Mulato","D":"Memórias Póstumas"}, "respostaCorreta": "B", "materia": "Literatura", "nivel": "medio", "explicacao": "'Iracema'."
+    },
+    {
+      "id": "lit_3", "pergunta": "Quem escreveu 'Os Lusíadas'?", "opcoes": {"A":"Camões","B":"Fernando Pessoa","C":"Eça de Queirós","D":"Almeida Garrett"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "medio", "explicacao": "Luís de Camões."
+    },
+    {
+      "id": "lit_4", "pergunta": "Qual é a obra-prima de Dante?", "opcoes": {"A":"Divina Comédia","B":"Decamerão","C":"Orlando Furioso","D":"Canções"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "medio", "explicacao": "'A Divina Comédia'."
+    },
+    {
+      "id": "lit_5", "pergunta": "Quem criou 'Dom Quixote'?", "opcoes": {"A":"Cervantes","B":"Shakespeare","C":"Goethe","D":"Victor Hugo"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "facil", "explicacao": "Miguel de Cervantes."
+    },
+    {
+      "id": "lit_6", "pergunta": "Qual movimento literário do Romantismo?", "opcoes": {"A":"Arcadianismo","B":"Realismo","C":"Modernismo","D":"Naturalismo"}, "respostaCorreta": "B", "materia": "Literatura", "nivel": "medio", "explicacao": "Século XIX."
+    },
+    {
+      "id": "lit_7", "pergunta": "Quem escreveu 'O Cortiço'?", "opcoes": {"A":"Aluísio Azevedo","B":"Machado de Assis","C":"Lima Barreto","D":"Graciliano Ramos"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "medio", "explicacao": "Aluísio Azevedo."
+    },
+    {
+      "id": "lit_8", "pergunta": "Qual poeta é do Modernismo?", "opcoes": {"A":"Olavo Bilac","B":"Castro Alves","C":"Carlos Drummond","D":"Gonçalves Dias"}, "respostaCorreta": "C", "materia": "Literatura", "nivel": "medio", "explicacao": "Carlos Drummond de Andrade."
+    },
+    {
+      "id": "lit_9", "pergunta": "Quem é autor de 'Hamlet'?", "opcoes": {"A":"Shakespeare","B":"Molière","C":"Ibsen","D":"Chekhov"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "facil", "explicacao": "William Shakespeare."
+    },
+    {
+      "id": "lit_10", "pergunta": "Qual é a trilogia de Graciliano Ramos?", "opcoes": {"A":"São Bernardo","B":"Vidas Secas","C":"Angústia","D":"Infância"}, "respostaCorreta": "B", "materia": "Literatura", "nivel": "medio", "explicacao": "'Vidas Secas'."
+    },
+    {
+      "id": "lit_11", "pergunta": "Quem escreveu 'O Pequeno Príncipe'?", "opcoes": {"A":"Saint-Exupéry","B":"Victor Hugo","C":"Jules Verne","D":"Balzac"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "facil", "explicacao": "Antoine de Saint-Exupéry."
+    },
+    {
+      "id": "lit_12", "pergunta": "Qual obra é de Jorge Amado?", "opcoes": {"A":"Gabriela","B":"Macunaíma","C":"O Ateneu","D":"O Triste Fim"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "medio", "explicacao": "'Gabriela, Cravo e Canela'."
+    },
+    {
+      "id": "lit_13", "pergunta": "Quem é 'O Poeta da Vila'?", "opcoes": {"A":"Vinicius de Moraes","B":"Noel Rosa","C":"Tom Jobim","D":"Chico Buarque"}, "respostaCorreta": "B", "materia": "Literatura", "nivel": "medio", "explicacao": "Noel Rosa."
+    },
+    {
+      "id": "lit_14", "pergunta": "Qual livro é de George Orwell?", "opcoes": {"A":"1984","B":"Admirável Mundo Novo","C":"Fahrenheit 451","D":"Laranja Mecânica"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "medio", "explicacao": "'1984'."
+    },
+    {
+      "id": "lit_15", "pergunta": "Quem escreveu 'Grande Sertão: Veredas'?", "opcoes": {"A":"Guimarães Rosa","B":"Clarice Lispector","C":"Érico Veríssimo","D":"Dalton Trevisan"}, "respostaCorreta": "A", "materia": "Literatura", "nivel": "medio", "explicacao": "João Guimarães Rosa."
+    },
+
+    // ==================== INGLÊS (15 perguntas) ====================
+    {
+      "id": "ing_1", "pergunta": "Qual é o passado de 'to go'?", "opcoes": {"A":"goed","B":"went","C":"gone","D":"goes"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "facil", "explicacao": "'Went' (irregular)."
+    },
+    {
+      "id": "ing_2", "pergunta": "Como dizer 'obrigado'?", "opcoes": {"A":"Please","B":"Sorry","C":"Thank you","D":"Welcome"}, "respostaCorreta": "C", "materia": "Inglês", "nivel": "facil", "explicacao": "'Thank you'."
+    },
+    {
+      "id": "ing_3", "pergunta": "Qual é o plural de 'child'?", "opcoes": {"A":"childs","B":"children","C":"childes","D":"childen"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "facil", "explicacao": "'Children' (irregular)."
+    },
+    {
+      "id": "ing_4", "pergunta": "Qual é o comparativo de 'good'?", "opcoes": {"A":"gooder","B":"better","C":"best","D":"more good"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "medio", "explicacao": "'Better' (irregular)."
+    },
+    {
+      "id": "ing_5", "pergunta": "Como se pergunta a idade?", "opcoes": {"A":"How old are you?","B":"What age you have?","C":"How many years?","D":"What old you?"}, "respostaCorreta": "A", "materia": "Inglês", "nivel": "facil", "explicacao": "'How old are you?'"
+    },
+    {
+      "id": "ing_6", "pergunta": "Qual é o presente de 'went'?", "opcoes": {"A":"go","B":"going","C":"goed","D":"gone"}, "respostaCorreta": "A", "materia": "Inglês", "nivel": "facil", "explicacao": "'Go'."
+    },
+    {
+      "id": "ing_7", "pergunta": "Como dizer 'você entende?'", "opcoes": {"A":"You understand?","B":"Do you understand?","C":"Understand you?","D":"You do understand?"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "facil", "explicacao": "'Do you understand?'"
+    },
+    {
+      "id": "ing_8", "pergunta": "Qual é o superlativo de 'bad'?", "opcoes": {"A":"badder","B":"worse","C":"worst","D":"baddest"}, "respostaCorreta": "C", "materia": "Inglês", "nivel": "medio", "explicacao": "'Worst' (irregular)."
+    },
+    {
+      "id": "ing_9", "pergunta": "Como se diz 'ontem'?", "opcoes": {"A":"today","B":"yesterday","C":"tomorrow","D":"now"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "facil", "explicacao": "'Yesterday'."
+    },
+    {
+      "id": "ing_10", "pergunta": "Qual é o passado de 'eat'?", "opcoes": {"A":"eated","B":"ated","C":"eat","D":"ate"}, "respostaCorreta": "D", "materia": "Inglês", "nivel": "facil", "explicacao": "'Ate' (irregular)."
+    },
+    {
+      "id": "ing_11", "pergunta": "Como dizer 'de nada'?", "opcoes": {"A":"No problem","B":"You're welcome","C":"No thanks","D":"Don't worry"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "facil", "explicacao": "'You're welcome'."
+    },
+    {
+      "id": "ing_12", "pergunta": "Qual é o plural de 'person'?", "opcoes": {"A":"persons","B":"people","C":"persones","D":"peoples"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "medio", "explicacao": "'People' (irregular)."
+    },
+    {
+      "id": "ing_13", "pergunta": "Como perguntar horas?", "opcoes": {"A":"What time is?","B":"What is the time?","C":"How much time?","D":"When is it?"}, "respostaCorreta": "B", "materia": "Inglês", "nivel": "facil", "explicacao": "'What time is it?'"
+    },
+    {
+      "id": "ing_14", "pergunta": "Qual é o presente de 'saw'?", "opcoes": {"A":"see","B":"seen","C":"saw","D":"seeing"}, "respostaCorreta": "A", "materia": "Inglês", "nivel": "facil", "explicacao": "'See'."
+    },
+    {
+      "id": "ing_15", "pergunta": "Como dizer 'desculpe'?", "opcoes": {"A":"Please","B":"Thank you","C":"Sorry","D":"Excuse me"}, "respostaCorreta": "C", "materia": "Inglês", "nivel": "facil", "explicacao": "'Sorry' ou 'Excuse me'."
+    },
+
+    // ==================== PROGRAMAÇÃO (15 perguntas) ====================
+    {
+      "id": "prog_1", "pergunta": "O que significa HTML?", "opcoes": {"A":"Hyper Text Markup Language","B":"High Tech Modern Language","C":"Home Tool Markup Language","D":"Hyper Transfer Markup Language"}, "respostaCorreta": "A", "materia": "Programação", "nivel": "facil", "explicacao": "Linguagem de marcação para web."
+    },
+    {
+      "id": "prog_2", "pergunta": "Qual linguagem estiliza páginas?", "opcoes": {"A":"HTML","B":"JavaScript","C":"Python","D":"CSS"}, "respostaCorreta": "D", "materia": "Programação", "nivel": "facil", "explicacao": "CSS (Cascading Style Sheets)."
+    },
+    {
+      "id": "prog_3", "pergunta": "O que é JavaScript?", "opcoes": {"A":"Linguagem marcação","B":"Linguagem programação","C":"Banco dados","D":"Sistema operacional"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "facil", "explicacao": "Linguagem de programação para web."
+    },
+    {
+      "id": "prog_4", "pergunta": "Qual símbolo comenta em Python?", "opcoes": {"A":"//","B":"#","C":"--","D":"/* */"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "medio", "explicacao": "'#' em Python."
+    },
+    {
+      "id": "prog_5", "pergunta": "O que é um loop?", "opcoes": {"A":"Condicional","B":"Repetição","C":"Variável","D":"Função"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "facil", "explicacao": "Estrutura de repetição."
+    },
+    {
+      "id": "prog_6", "pergunta": "Qual linguagem é do Android?", "opcoes": {"A":"Swift","B":"Kotlin","C":"C#","D":"Ruby"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "medio", "explicacao": "Kotlin (oficial do Android)."
+    },
+    {
+      "id": "prog_7", "pergunta": "O que é Git?", "opcoes": {"A":"Linguagem","B":"Banco dados","C":"Controle versão","D":"Editor código"}, "respostaCorreta": "C", "materia": "Programação", "nivel": "medio", "explicacao": "Sistema de controle de versão."
+    },
+    {
+      "id": "prog_8", "pergunta": "Qual é o tipo de 'Hello'?", "opcoes": {"A":"int","B":"float","C":"string","D":"boolean"}, "respostaCorreta": "C", "materia": "Programação", "nivel": "facil", "explicacao": "String (texto)."
+    },
+    {
+      "id": "prog_9", "pergunta": "O que é API?", "opcoes": {"A":"Linguagem","B":"Interface programa","C":"Banco dados","D":"Protocolo rede"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "medio", "explicacao": "Application Programming Interface."
+    },
+    {
+      "id": "prog_10", "pergunta": "Qual linguagem é do iOS?", "opcoes": {"A":"Java","B":"Swift","C":"Kotlin","D":"Dart"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "medio", "explicacao": "Swift (oficial do iOS)."
+    },
+    {
+      "id": "prog_11", "pergunta": "O que é SQL?", "opcoes": {"A":"Linguagem programação","B":"Linguagem consulta","C":"Framework","D":"Biblioteca"}, "respostaCorreta": "B", "materia": "Programação", "nivel": "medio", "explicacao": "Structured Query Language."
+    },
+    {
+      "id": "prog_12", "pergunta": "Qual é o operador 'E' lógico?", "opcoes": {"A":"&&","B":"||","C":"!","D":"&"}, "respostaCorreta": "A", "materia": "Programação", "nivel": "facil", "explicacao": "'&&' na maioria das linguagens."
     }
-  ]
-}
+    }}
+    
