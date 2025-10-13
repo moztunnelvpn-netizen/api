@@ -520,5 +520,5 @@
     {
       "id": "prog_12", "pergunta": "Qual é o operador 'E' lógico?", "opcoes": {"A":"&&","B":"||","C":"!","D":"&"}, "respostaCorreta": "A", "materia": "Programação", "nivel": "facil", "explicacao": "'&&' na maioria das linguagens."
     }
-    }}
+  ]}
     
