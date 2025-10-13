@@ -1,46 +1,368 @@
-// No seu server.js - ATUALIZE a rota de perguntas
-app.get("/api/quiz/perguntas", async (req, res) => {
-  try {
-    const { materia, nivel, limit = 10 } = req.query;
-    const quizData = await readJson("./data/quiz.json");
-    
-    let perguntas = [...quizData.perguntas];
-    
-    // Aplicar filtros
-    if (materia) {
-      perguntas = perguntas.filter(p => 
-        p.materia.toLowerCase() === materia.toLowerCase()
-      );
+{
+  "perguntas": [
+    {
+      "id": "math_1",
+      "pergunta": "Qual é o valor de π aproximadamente?",
+      "opcoes": {
+        "A": "3.14",
+        "B": "2.71", 
+        "C": "1.61",
+        "D": "4.20"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática",
+      "nivel": "facil",
+      "explicacao": "π (pi) é aproximadamente 3.14159, mas comumente arredondado para 3.14."
+    },
+    {
+      "id": "math_2",
+      "pergunta": "Qual é a fórmula de Bhaskara?",
+      "opcoes": {
+        "A": "x = -b ± √(b² - 4ac) / 2a",
+        "B": "E = mc²",
+        "C": "a² = b² + c²",
+        "D": "V = πr²h"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "A fórmula de Bhaskara resolve equações do segundo grau."
+    },
+    {
+      "id": "math_3",
+      "pergunta": "Quanto é 7 × 8?",
+      "opcoes": {
+        "A": "54",
+        "B": "56",
+        "C": "58",
+        "D": "60"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "facil",
+      "explicacao": "7 × 8 = 56, uma das tabuadas básicas."
+    },
+    {
+      "id": "math_4",
+      "pergunta": "Qual é a raiz quadrada de 144?",
+      "opcoes": {
+        "A": "11",
+        "B": "12",
+        "C": "13",
+        "D": "14"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "facil",
+      "explicacao": "12 × 12 = 144, portanto √144 = 12."
+    },
+    {
+      "id": "hist_1",
+      "pergunta": "Em que ano o Brasil foi descoberto?",
+      "opcoes": {
+        "A": "1492",
+        "B": "1500",
+        "C": "1520",
+        "D": "1450"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "facil",
+      "explicacao": "Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500."
+    },
+    {
+      "id": "hist_2",
+      "pergunta": "Quem proclamou a Independência do Brasil?",
+      "opcoes": {
+        "A": "Dom Pedro I",
+        "B": "Dom Pedro II",
+        "C": "Dom João VI",
+        "D": "Tiradentes"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "facil",
+      "explicacao": "Dom Pedro I proclamou a independência em 7 de setembro de 1822."
+    },
+    {
+      "id": "hist_3",
+      "pergunta": "Em que ano terminou a Segunda Guerra Mundial?",
+      "opcoes": {
+        "A": "1944",
+        "B": "1945",
+        "C": "1946",
+        "D": "1947"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "A Segunda Guerra Mundial terminou em 2 de setembro de 1945."
+    },
+    {
+      "id": "geo_1",
+      "pergunta": "Qual é o maior país do mundo em área territorial?",
+      "opcoes": {
+        "A": "China",
+        "B": "Estados Unidos",
+        "C": "Rússia",
+        "D": "Canadá"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia", 
+      "nivel": "facil",
+      "explicacao": "A Rússia possui aproximadamente 17 milhões de km² de área."
+    },
+    {
+      "id": "geo_2",
+      "pergunta": "Qual é o rio mais longo do mundo?",
+      "opcoes": {
+        "A": "Amazonas",
+        "B": "Nilo",
+        "C": "Yangtzé",
+        "D": "Mississippi"
+      },
+      "respostaCorreta": "A",
+      "materia": "Geografia",
+      "nivel": "medio",
+      "explicacao": "O Rio Amazonas tem aproximadamente 6.992 km de extensão."
+    },
+    {
+      "id": "geo_3",
+      "pergunta": "Qual é a capital do Japão?",
+      "opcoes": {
+        "A": "Pequim",
+        "B": "Seul",
+        "C": "Tóquio",
+        "D": "Osaka"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia",
+      "nivel": "facil",
+      "explicacao": "Tóquio é a capital e maior cidade do Japão."
+    },
+    {
+      "id": "cien_1",
+      "pergunta": "Quantos planetas existem no sistema solar?",
+      "opcoes": {
+        "A": "7",
+        "B": "8",
+        "C": "9",
+        "D": "10"
+      },
+      "respostaCorreta": "B",
+      "materia": "Ciências",
+      "nivel": "facil",
+      "explicacao": "Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
+    },
+    {
+      "id": "cien_2",
+      "pergunta": "Qual é o maior osso do corpo humano?",
+      "opcoes": {
+        "A": "Fêmur",
+        "B": "Tíbia",
+        "C": "Úmero",
+        "D": "Fíbula"
+      },
+      "respostaCorreta": "A",
+      "materia": "Ciências",
+      "nivel": "medio",
+      "explicacao": "O fêmur é o maior e mais forte osso do corpo humano."
+    },
+    {
+      "id": "quim_1",
+      "pergunta": "Qual é o símbolo químico do ouro?",
+      "opcoes": {
+        "A": "Ag",
+        "B": "Au",
+        "C": "Fe",
+        "D": "Cu"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "facil",
+      "explicacao": "Au vem da palavra latina 'Aurum', que significa ouro."
+    },
+    {
+      "id": "quim_2",
+      "pergunta": "Qual é o gás mais abundante na atmosfera terrestre?",
+      "opcoes": {
+        "A": "Oxigênio",
+        "B": "Hélio",
+        "C": "Nitrogênio",
+        "D": "Dióxido de Carbono"
+      },
+      "respostaCorreta": "C",
+      "materia": "Química",
+      "nivel": "medio",
+      "explicacao": "O nitrogênio compõe cerca de 78% da atmosfera terrestre."
+    },
+    {
+      "id": "fis_1",
+      "pergunta": "Qual é a unidade de medida da força no SI?",
+      "opcoes": {
+        "A": "Joule",
+        "B": "Watt",
+        "C": "Newton",
+        "D": "Pascal"
+      },
+      "respostaCorreta": "C",
+      "materia": "Física",
+      "nivel": "medio",
+      "explicacao": "Newton (N) é a unidade de força no Sistema Internacional."
+    },
+    {
+      "id": "fis_2",
+      "pergunta": "Qual é a velocidade da luz no vácuo?",
+      "opcoes": {
+        "A": "300.000 km/s",
+        "B": "150.000 km/s",
+        "C": "450.000 km/s",
+        "D": "600.000 km/s"
+      },
+      "respostaCorreta": "A",
+      "materia": "Física",
+      "nivel": "medio",
+      "explicacao": "A velocidade da luz no vácuo é de aproximadamente 299.792 km/s."
+    },
+    {
+      "id": "bio_1",
+      "pergunta": "Qual organela é conhecida como 'usina de energia' da célula?",
+      "opcoes": {
+        "A": "Núcleo",
+        "B": "Mitocôndria",
+        "C": "Ribossomo",
+        "D": "Complexo de Golgi"
+      },
+      "respostaCorreta": "B",
+      "materia": "Biologia",
+      "nivel": "medio",
+      "explicacao": "As mitocôndrias produzem ATP, a energia da célula."
+    },
+    {
+      "id": "bio_2",
+      "pergunta": "Quantos cromossomos tem uma célula humana normal?",
+      "opcoes": {
+        "A": "23",
+        "B": "46",
+        "C": "48",
+        "D": "52"
+      },
+      "respostaCorreta": "B",
+      "materia": "Biologia",
+      "nivel": "medio",
+      "explicacao": "As células humanas têm 46 cromossomos (23 pares)."
+    },
+    {
+      "id": "lit_1",
+      "pergunta": "Quem escreveu 'Dom Casmurro'?",
+      "opcoes": {
+        "A": "José de Alencar",
+        "B": "Machado de Assis",
+        "C": "Lima Barreto",
+        "D": "Graciliano Ramos"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "Machado de Assis é o autor desta obra-prima da literatura brasileira."
+    },
+    {
+      "id": "lit_2",
+      "pergunta": "Qual destes é um romance de José de Alencar?",
+      "opcoes": {
+        "A": "O Cortiço",
+        "B": "Iracema",
+        "C": "O Mulato",
+        "D": "Memórias Póstumas"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "'Iracema' é uma das obras mais famosas de José de Alencar."
+    },
+    {
+      "id": "ing_1",
+      "pergunta": "Qual é o passado do verbo 'to go'?",
+      "opcoes": {
+        "A": "goed",
+        "B": "went",
+        "C": "gone",
+        "D": "goes"
+      },
+      "respostaCorreta": "B",
+      "materia": "Inglês",
+      "nivel": "facil",
+      "explicacao": "'Went' é o simple past do verbo irregular 'to go'."
+    },
+    {
+      "id": "ing_2",
+      "pergunta": "Como se diz 'obrigado' em inglês?",
+      "opcoes": {
+        "A": "Please",
+        "B": "Sorry",
+        "C": "Thank you",
+        "D": "Welcome"
+      },
+      "respostaCorreta": "C",
+      "materia": "Inglês",
+      "nivel": "facil",
+      "explicacao": "'Thank you' é a forma correta de dizer obrigado em inglês."
+    },
+    {
+      "id": "prog_1",
+      "pergunta": "O que significa HTML?",
+      "opcoes": {
+        "A": "Hyper Text Markup Language",
+        "B": "High Tech Modern Language",
+        "C": "Home Tool Markup Language",
+        "D": "Hyper Transfer Markup Language"
+      },
+      "respostaCorreta": "A",
+      "materia": "Programação",
+      "nivel": "facil",
+      "explicacao": "HTML é a linguagem de marcação padrão para páginas web."
+    },
+    {
+      "id": "prog_2",
+      "pergunta": "Qual linguagem é usada para estilizar páginas web?",
+      "opcoes": {
+        "A": "HTML",
+        "B": "JavaScript",
+        "C": "Python",
+        "D": "CSS"
+      },
+      "respostaCorreta": "D",
+      "materia": "Programação",
+      "nivel": "facil",
+      "explicacao": "CSS (Cascading Style Sheets) é usado para estilizar páginas web."
+    },
+    {
+      "id": "filos_1",
+      "pergunta": "Quem é considerado o pai da filosofia ocidental?",
+      "opcoes": {
+        "A": "Aristóteles",
+        "B": "Platão",
+        "C": "Sócrates",
+        "D": "Pitágoras"
+      },
+      "respostaCorreta": "C",
+      "materia": "Filosofia",
+      "nivel": "medio",
+      "explicacao": "Sócrates é considerado o fundador da filosofia ocidental."
+    },
+    {
+      "id": "filos_2",
+      "pergunta": "Qual filósofo disse 'Penso, logo existo'?",
+      "opcoes": {
+        "A": "Platão",
+        "B": "Aristóteles",
+        "C": "Descartes",
+        "D": "Kant"
+      },
+      "respostaCorreta": "C",
+      "materia": "Filosofia",
+      "nivel": "medio",
+      "explicacao": "René Descartes é o autor da famosa frase 'Cogito, ergo sum'."
     }
-    
-    if (nivel) {
-      perguntas = perguntas.filter(p => 
-        p.nivel.toLowerCase() === nivel.toLowerCase()
-      );
-    }
-    
-    // ✅ EMBARALHAR PERGUNTAS ALEATORIAMENTE
-    perguntas = perguntas.sort(() => Math.random() - 0.5);
-    
-    // Limitar quantidade
-    perguntas = perguntas.slice(0, parseInt(limit));
-    
-    // Remover resposta correta para o cliente
-    const perguntasParaCliente = perguntas.map(p => {
-      const { respostaCorreta, ...perguntaSemResposta } = p;
-      return perguntaSemResposta;
-    });
-    
-    res.json({
-      success: true,
-      data: perguntasParaCliente,
-      total: perguntasParaCliente.length
-    });
-    
-  } catch (error) {
-    res.status(500).json({ 
-      success: false, 
-      error: "Erro ao buscar perguntas do quiz" 
-    });
-  }
-});
+  ]
+}
