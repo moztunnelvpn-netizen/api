@@ -1,3 +1,6 @@
+Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
+
+```json
 {
   "perguntas": [
     {
@@ -69,6 +72,436 @@
       "materia": "Matemática",
       "nivel": "medio",
       "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
-    }
-  ]
-}
+    },
+
+    // MAIS PERGUNTAS DE GEOGRAFIA (Total: 8)
+    {
+      "id": "6",
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "opcoes": {
+        "A": "Atlântico",
+        "B": "Índico",
+        "C": "Pacífico",
+        "D": "Ártico"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia",
+      "nivel": "facil",
+      "explicacao": "O Oceano Pacífico é o maior oceano da Terra."
+    },
+    {
+      "id": "7",
+      "pergunta": "Moçambique localiza-se em qual região da África?",
+      "opcoes": {
+        "A": "África Ocidental",
+        "B": "África Central",
+        "C": "África Oriental",
+        "D": "África do Norte"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia", 
+      "nivel": "facil",
+      "explicacao": "Moçambique situa-se na costa oriental da África Austral."
+    },
+    {
+      "id": "8",
+      "pergunta": "Qual é o rio mais longo de Moçambique?",
+      "opcoes": {
+        "A": "Rio Zambeze",
+        "B": "Rio Limpopo",
+        "C": "Rio Save",
+        "D": "Rio Rovuma"
+      },
+      "respostaCorreta": "A",
+      "materia": "Geografia",
+      "nivel": "medio",
+      "explicacao": "O Rio Zambeze é o mais longo de Moçambique, com cerca de 2.574 km."
+    },
+    {
+      "id": "9",
+      "pergunta": "Quantas províncias tem Moçambique?",
+      "opcoes": {
+        "A": "8",
+        "B": "9",
+        "C": "10",
+        "D": "11"
+      },
+      "respostaCorreta": "D",
+      "materia": "Geografia",
+      "nivel": "medio", 
+      "explicacao": "Moçambique está dividido em 11 províncias."
+    },
+    {
+      "id": "10",
+      "pergunta": "Qual destes países NÃO faz fronteira com Moçambique?",
+      "opcoes": {
+        "A": "Tanzânia",
+        "B": "Zâmbia",
+        "C": "Zimbábue",
+        "D": "Botswana"
+      },
+      "respostaCorreta": "D",
+      "materia": "Geografia",
+      "nivel": "dificil",
+      "explicacao": "Botswana não faz fronteira com Moçambique."
+    },
+    {
+      "id": "11",
+      "pergunta": "Qual é a montanha mais alta de Moçambique?",
+      "opcoes": {
+        "A": "Monte Binga",
+        "B": "Monte Namúli",
+        "C": "Serra da Gorongosa",
+        "D": "Monte Zembe"
+      },
+      "respostaCorreta": "A",
+      "materia": "Geografia",
+      "nivel": "dificil",
+      "explicacao": "Monte Binga é o ponto mais alto de Moçambique, com 2.436 metros."
+    },
+    {
+      "id": "12",
+      "pergunta": "Qual é o clima predominante em Moçambique?",
+      "opcoes": {
+        "A": "Desértico",
+        "B": "Tropical",
+        "C": "Mediterrâneo",
+        "D": "Temperado"
+      },
+      "respostaCorreta": "B",
+      "materia": "Geografia",
+      "nivel": "medio",
+      "explicacao": "Moçambique tem clima tropical, com estações chuvosa e seca."
+    },
+
+    // MAIS PERGUNTAS DE LITERATURA (Total: 8)
+    {
+      "id": "13",
+      "pergunta": "Quem escreveu 'Memorial do Convento'?",
+      "opcoes": {
+        "A": "José Saramago",
+        "B": "Fernando Pessoa",
+        "C": "Eça de Queirós",
+        "D": "Luís de Camões"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "'Memorial do Convento' é uma obra de José Saramago."
+    },
+    {
+      "id": "14",
+      "pergunta": "Qual destes é um heterónimo de Fernando Pessoa?",
+      "opcoes": {
+        "A": "Ricardo Reis",
+        "B": "Miguel Torga",
+        "C": "Almada Negreiros",
+        "D": "Sophia de Mello"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "dificil",
+      "explicacao": "Ricardo Reis é um dos heterónimos de Fernando Pessoa."
+    },
+    {
+      "id": "15",
+      "pergunta": "Em que século viveu Luís de Camões?",
+      "opcoes": {
+        "A": "XV",
+        "B": "XVI",
+        "C": "XVII",
+        "D": "XVIII"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "Luís de Camões viveu no século XVI (1524-1580)."
+    },
+    {
+      "id": "16",
+      "pergunta": "Qual é a obra mais famosa de Eça de Queirós?",
+      "opcoes": {
+        "A": "Os Maias",
+        "B": "Memórias Póstumas",
+        "C": "O Crime do Padre Amaro",
+        "D": "Todos estão corretos"
+      },
+      "respostaCorreta": "D",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "Eça de Queirós é famoso por todas estas obras."
+    },
+    {
+      "id": "17",
+      "pergunta": "Quem escreveu 'O Auto da Barca do Inferno'?",
+      "opcoes": {
+        "A": "Gil Vicente",
+        "B": "Almeida Garrett",
+        "C": "Camilo Castelo Branco",
+        "D": "António Vieira"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "dificil",
+      "explicacao": "Gil Vicente é o autor de 'O Auto da Barca do Inferno'."
+    },
+    {
+      "id": "18",
+      "pergunta": "Qual movimento literário veio após o Romantismo?",
+      "opcoes": {
+        "A": "Classicismo",
+        "B": "Realismo",
+        "C": "Modernismo",
+        "D": "Barroco"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "O Realismo surgiu como reação ao Romantismo."
+    },
+    {
+      "id": "19",
+      "pergunta": "Quem é o autor de 'Mensagem'?",
+      "opcoes": {
+        "A": "Fernando Pessoa",
+        "B": "Florbela Espanca",
+        "C": "Cecília Meireles",
+        "D": "Vergílio Ferreira"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "facil",
+      "explicacao": "'Mensagem' é a única obra em português publicada por Fernando Pessoa em vida."
+    },
+    {
+      "id": "20",
+      "pergunta": "Qual destas obras é de Machado de Assis?",
+      "opcoes": {
+        "A": "Dom Casmurro",
+        "B": "O Cortiço",
+        "C": "O Guarani",
+        "D": "Iracema"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "medio",
+      "explicacao": "'Dom Casmurro' é uma das obras mais famosas de Machado de Assis."
+    },
+
+    // MAIS PERGUNTAS DE QUÍMICA (Total: 8)
+    {
+      "id": "21",
+      "pergunta": "Qual é o símbolo químico do ouro?",
+      "opcoes": {
+        "A": "Ag",
+        "B": "Au",
+        "C": "Fe",
+        "D": "Cu"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química", 
+      "nivel": "facil",
+      "explicacao": "Au é o símbolo do ouro (do latim 'aurum')."
+    },
+    {
+      "id": "22",
+      "pergunta": "Quantos elementos tem a tabela periódica?",
+      "opcoes": {
+        "A": "92",
+        "B": "118",
+        "C": "108",
+        "D": "126"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "medio",
+      "explicacao": "Atualmente a tabela periódica tem 118 elementos confirmados."
+    },
+    {
+      "id": "23",
+      "pergunta": "Qual é o pH da água pura?",
+      "opcoes": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "respostaCorreta": "C",
+      "materia": "Química",
+      "nivel": "medio",
+      "explicacao": "A água pura tem pH neutro igual a 7."
+    },
+    {
+      "id": "24",
+      "pergunta": "Qual é o gás mais abundante na atmosfera?",
+      "opcoes": {
+        "A": "Oxigênio",
+        "B": "Dióxido de Carbono",
+        "C": "Nitrogênio",
+        "D": "Argônio"
+      },
+      "respostaCorreta": "C",
+      "materia": "Química",
+      "nivel": "facil",
+      "explicacao": "O nitrogênio representa cerca de 78% da atmosfera terrestre."
+    },
+    {
+      "id": "25",
+      "pergunta": "O que significa H₂SO₄?",
+      "opcoes": {
+        "A": "Ácido clorídrico",
+        "B": "Ácido sulfúrico",
+        "C": "Ácido nítrico",
+        "D": "Ácido fosfórico"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "medio",
+      "explicacao": "H₂SO₄ é a fórmula do ácido sulfúrico."
+    },
+    {
+      "id": "26",
+      "pergunta": "Qual destes é um metal alcalino?",
+      "opcoes": {
+        "A": "Cálcio",
+        "B": "Sódio",
+        "C": "Alumínio",
+        "D": "Ferro"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "dificil",
+      "explicacao": "O sódio pertence à família dos metais alcalinos (Grupo 1)."
+    },
+    {
+      "id": "27",
+      "pergunta": "O que é uma reação de oxidação?",
+      "opcoes": {
+        "A": "Perda de elétrons",
+        "B": "Ganho de elétrons",
+        "C": "Troca de prótons",
+        "D": "Formação de íons"
+      },
+      "respostaCorreta": "A",
+      "materia": "Química",
+      "nivel": "dificil",
+      "explicacao": "Oxidação é o processo de perda de elétrons."
+    },
+    {
+      "id": "28",
+      "pergunta": "Qual é o estado físico do mercúrio à temperatura ambiente?",
+      "opcoes": {
+        "A": "Sólido",
+        "B": "Líquido",
+        "C": "Gasoso",
+        "D": "Plasma"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "facil",
+      "explicacao": "O mercúrio é um dos poucos metais que se encontra no estado líquido à temperatura ambiente."
+    },
+
+    // MAIS PERGUNTAS DE HISTÓRIA (Total: 8)
+    {
+      "id": "29",
+      "pergunta": "Quem foi o primeiro presidente de Moçambique?",
+      "opcoes": {
+        "A": "Joaquim Chissano",
+        "B": "Samora Machel",
+        "C": "Armando Guebuza",
+        "D": "Filipe Nyusi"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "facil",
+      "explicacao": "Samora Machel foi o primeiro presidente de Moçambique após a independência."
+    },
+    {
+      "id": "30",
+      "pergunta": "Em que ano ocorreu a Conferência de Berlim?",
+      "opcoes": {
+        "A": "1884-1885",
+        "B": "1900-1901",
+        "C": "1870-1871",
+        "D": "1899-1900"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "A Conferência de Berlim ocorreu entre 1884-1885 e definiu a partilha de África."
+    },
+    {
+      "id": "31",
+      "pergunta": "Qual era o nome antigo de Maputo?",
+      "opcoes": {
+        "A": "Vila Pery",
+        "B": "Vila Junqueiro",
+        "C": "Lourenço Marques",
+        "D": "Vila Cabral"
+      },
+      "respostaCorreta": "C",
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "Maputo chamava-se Lourenço Marques durante o período colonial."
+    },
+    {
+      "id": "32",
+      "pergunta": "Quem foi o líder da FRELIMO durante a luta de libertação?",
+      "opcoes": {
+        "A": "Samora Machel",
+        "B": "Joaquim Chissano",
+        "C": "Eduardo Mondlane",
+        "D": "Armando Guebuza"
+      },
+      "respostaCorreta": "C",
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "Eduardo Mondlane foi o primeiro presidente da FRELIMO e líder da luta de libertação."
+    },
+    {
+      "id": "33",
+      "pergunta": "Em que século os portugueses chegaram a Moçambique?",
+      "opcoes": {
+        "A": "XV",
+        "B": "XVI",
+        "C": "XVII",
+        "D": "XVIII"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "Os portugueses chegaram a Moçambique no século XV, por volta de 1498."
+    },
+    {
+      "id": "34",
+      "pergunta": "Qual foi o último rei do Reino de Gaza?",
+      "opcoes": {
+        "A": "Ngungunhane",
+        "B": "Soshangane",
+        "C": "Muzila",
+        "D": "Malande"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "dificil",
+      "explicacao": "Ngungunhane foi o último imperador do Estado de Gaza, capturado pelos portugueses em 1895."
+    },
+    {
+      "id": "35",
+      "pergunta": "Quando começou a Guerra Civil em Moçambique?",
+      "opcoes": {
+        "A": "1975",
+        "B": "1977",
+        "C": "1982",
+        "D": "1990"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "dificil",
+      "explicacao": "A Guerra Civil moçambicana começou em 1977, dois anos após a independência."
+    },
+    {
+      "id": "36",
+      "pergunta": "Qual acordo pôs fim à Guerra Civil em Moçambique?",
+      "op
