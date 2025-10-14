@@ -5,7 +5,7 @@
       "pergunta": "Qual é a capital de Moçambique?",
       "opcoes": {
         "A": "Maputo",
-        "B": "Beira", 
+        "B": "Beira",
         "C": "Nampula",
         "D": "Quelimane"
       },
@@ -29,12 +29,12 @@
       "explicacao": "'Os Lusíadas' é a obra épica de Luís de Camões, publicada em 1572."
     },
     {
-      "id": "3", 
+      "id": "3",
       "pergunta": "Qual é a fórmula química da água?",
       "opcoes": {
         "A": "CO2",
         "B": "H2O",
-        "C": "NaCl", 
+        "C": "NaCl",
         "D": "O2"
       },
       "respostaCorreta": "B",
@@ -51,7 +51,7 @@
         "C": "1985",
         "D": "1995"
       },
-      "respostaCorreta": "A", 
+      "respostaCorreta": "A",
       "materia": "História",
       "nivel": "medio",
       "explicacao": "Moçambique tornou-se independente de Portugal em 25 de Junho de 1975."
@@ -61,7 +61,7 @@
       "pergunta": "Qual é o resultado de 8 × (6 - 2) ÷ 4?",
       "opcoes": {
         "A": "4",
-        "B": "8", 
+        "B": "8",
         "C": "12",
         "D": "16"
       },
@@ -70,7 +70,6 @@
       "nivel": "medio",
       "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
     },
-
     {
       "id": "6",
       "pergunta": "Qual é o maior oceano do mundo?",
@@ -95,7 +94,7 @@
         "D": "África do Norte"
       },
       "respostaCorreta": "C",
-      "materia": "Geografia", 
+      "materia": "Geografia",
       "nivel": "facil",
       "explicacao": "Moçambique situa-se na costa oriental da África Austral."
     },
@@ -124,7 +123,7 @@
       },
       "respostaCorreta": "D",
       "materia": "Geografia",
-      "nivel": "medio", 
+      "nivel": "medio",
       "explicacao": "Moçambique está dividido em 11 províncias."
     },
     {
@@ -169,7 +168,6 @@
       "nivel": "medio",
       "explicacao": "Moçambique tem clima tropical, com estações chuvosa e seca."
     },
-
     {
       "id": "13",
       "pergunta": "Quem escreveu 'Memorial do Convento'?",
@@ -282,7 +280,6 @@
       "nivel": "medio",
       "explicacao": "'Dom Casmurro' é uma das obras mais famosas de Machado de Assis."
     },
-
     {
       "id": "21",
       "pergunta": "Qual é o símbolo químico do ouro?",
@@ -293,7 +290,7 @@
         "D": "Cu"
       },
       "respostaCorreta": "B",
-      "materia": "Química", 
+      "materia": "Química",
       "nivel": "facil",
       "explicacao": "Au é o símbolo do ouro (do latim 'aurum')."
     },
@@ -395,7 +392,6 @@
       "nivel": "facil",
       "explicacao": "O mercúrio é um dos poucos metais que se encontra no estado líquido à temperatura ambiente."
     },
-
     {
       "id": "29",
       "pergunta": "Quem foi o primeiro presidente de Moçambique?",
@@ -508,7 +504,6 @@
       "nivel": "medio",
       "explicacao": "O Acordo Geral de Paz foi assinado em Roma em 1992, pondo fim à guerra civil."
     },
-
     {
       "id": "37",
       "pergunta": "Qual é o resultado de 15 + 27?",
@@ -532,7 +527,7 @@
         "C": "75",
         "D": "100"
       },
-      "respostaCorreta": "B", 
+      "respostaCorreta": "B",
       "materia": "Matemática",
       "nivel": "facil",
       "explicacao": "25% de 200 = 0.25 × 200 = 50"
@@ -575,7 +570,7 @@
         "D": "2πr²"
       },
       "respostaCorreta": "A",
-      "materia": "Matemática", 
+      "materia": "Matemática",
       "nivel": "medio",
       "explicacao": "A área do círculo é calculada por π × raio²"
     },
