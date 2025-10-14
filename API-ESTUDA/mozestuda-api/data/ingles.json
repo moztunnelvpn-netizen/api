@@ -1,0 +1,18 @@
+{
+  "perguntas": [
+    {
+      "_id": "1",
+      "pergunta": "What is the past tense of 'go'?",
+      "opcoes": {
+        "A": "goed",
+        "B": "went",
+        "C": "gone", 
+        "D": "goes"
+      },
+      "respostaCorreta": "B",
+      "materia": "ingles",
+      "nivel": "basico",
+      "explicacao": "The past tense of 'go' is 'went'. 'Gone' is the past participle."
+    }
+  ]
+}
