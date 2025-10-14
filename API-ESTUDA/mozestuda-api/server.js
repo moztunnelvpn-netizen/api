@@ -7,8 +7,6 @@ import path from "path";
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-// Pasta estática para arquivos (capas, PDFs)
 app.use("/uploads", express.static("uploads"));
 
 // ----------------------------
@@ -24,27 +22,35 @@ const readJson = async (file) => {
   }
 };
 
-const writeJson = async (file, data) => {
-  await fs.writeFile(file, JSON.stringify(data, null, 2));
-};
-
-// Mapeamento de matérias para arquivos
+// Mapeamento de matérias para arquivos (baseado no seu quiz.json)
 const materiasMap = {
-  'matematica': 'matematica.json',
-  'portugues': 'portugues.json', 
-  'ingles': 'ingles.json',
-  'historia': 'historia.json',
   'geografia': 'geografia.json',
-  'fisica': 'fisica.json',
-  'quimica': 'quimica.json',
-  'biologia': 'biologia.json'
+  'literatura': 'literatura.json', 
+  'química': 'quimica.json',
+  'história': 'historia.json',
+  'matemática': 'matematica.json'
+};
+
+// Função para detectar matérias automaticamente
+const detectarMaterias = async () => {
+  try {
+    const files = await fs.readdir('./data/quiz');
+    const materias = files
+      .filter(file => file.endsWith('.json') && file !== 'quiz.json')
+      .map(file => file.replace('.json', ''));
+    
+    console.log('📚 Matérias detectadas:', materias);
+    return materias;
+  } catch (error) {
+    console.log('📚 Usando mapeamento padrão de matérias');
+    return Object.keys(materiasMap);
+  }
 };
 
 // ----------------------------
-// ROTAS DO QUIZ MODIFICADAS
+// ROTAS DO QUIZ - COMPATÍVEL COM AMBAS ESTRUTURAS
 // ----------------------------
 
-// GET - Buscar perguntas por matéria
 app.get("/api/quiz/perguntas", async (req, res) => {
   try {
     const { materia, nivel, limit = 10 } = req.query;
@@ -56,36 +62,47 @@ app.get("/api/quiz/perguntas", async (req, res) => {
       });
     }
 
-    // Verificar se a matéria existe no mapeamento
-    const arquivoMateria = materiasMap[materia.toLowerCase()];
-    if (!arquivoMateria) {
-      return res.status(404).json({
-        success: false,
-        error: `Matéria '${materia}' não encontrada`
-      });
-    }
+    let perguntas = [];
 
-    // Ler arquivo específico da matéria
-    const quizData = await readJson(`./data/quiz/${arquivoMateria}`);
+    // PRIMEIRO: Tentar arquivo específico da matéria
+    const materiaLower = materia.toLowerCase();
+    const arquivoEspecifico = `./data/quiz/${materiaLower}.json`;
     
-    let perguntas = [...quizData.perguntas];
+    if (await fs.pathExists(arquivoEspecifico)) {
+      // ✅ Usar arquivo separado da matéria
+      const quizData = await readJson(arquivoEspecifico);
+      perguntas = [...quizData.perguntas];
+      console.log(`📖 Carregando de ${materiaLower}.json: ${perguntas.length} perguntas`);
+    } else {
+      // ✅ Fallback: usar quiz.json geral e filtrar
+      const quizData = await readJson("./data/quiz.json");
+      perguntas = quizData.perguntas.filter(p => 
+        p.materia.toLowerCase() === materiaLower
+      );
+      console.log(`📖 Carregando de quiz.json (filtrado): ${perguntas.length} perguntas`);
+    }
     
     // Aplicar filtro de nível se fornecido
-    if (nivel) {
+    if (nivel && perguntas.length > 0) {
       perguntas = perguntas.filter(p => 
         p.nivel.toLowerCase() === nivel.toLowerCase()
       );
     }
     
-    // Embaralhar perguntas
+    // Embaralhar e limitar
     perguntas = perguntas.sort(() => Math.random() - 0.5);
-    
-    // Limitar quantidade
     perguntas = perguntas.slice(0, parseInt(limit));
+    
+    if (perguntas.length === 0) {
+      return res.status(404).json({
+        success: false,
+        error: `Nenhuma pergunta encontrada para ${materia}`
+      });
+    }
     
     res.json({
       success: true,
-      data: perguntas, // ✅ AGORA ENVIAMOS A RESPOSTA CORRETA
+      data: perguntas,
       total: perguntas.length
     });
     
@@ -93,64 +110,15 @@ app.get("/api/quiz/perguntas", async (req, res) => {
     console.error("Erro ao buscar perguntas:", error);
     res.status(500).json({ 
       success: false, 
-      error: "Erro interno ao buscar perguntas do quiz" 
+      error: "Erro interno ao buscar perguntas" 
     });
   }
 });
 
-// POST - Verificar resposta (agora desnecessário pois enviamos a resposta correta)
-app.post("/api/quiz/verificar-resposta", async (req, res) => {
-  try {
-    const { perguntaId, resposta, materia } = req.body;
-    
-    if (!perguntaId || !resposta || !materia) {
-      return res.status(400).json({
-        success: false,
-        error: "ID da pergunta, resposta e matéria são obrigatórios"
-      });
-    }
-    
-    const arquivoMateria = materiasMap[materia.toLowerCase()];
-    if (!arquivoMateria) {
-      return res.status(404).json({
-        success: false,
-        error: `Matéria '${materia}' não encontrada`
-      });
-    }
-
-    const quizData = await readJson(`./data/quiz/${arquivoMateria}`);
-    const pergunta = quizData.perguntas.find(p => p.id === perguntaId || p._id === perguntaId);
-    
-    if (!pergunta) {
-      return res.status(404).json({
-        success: false,
-        error: "Pergunta não encontrada"
-      });
-    }
-    
-    const estaCorreta = pergunta.respostaCorreta === resposta;
-    
-    res.json({
-      success: true,
-      data: {
-        estaCorreta,
-        respostaCorreta: pergunta.respostaCorreta,
-        explicacao: pergunta.explicacao
-      }
-    });
-    
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: "Erro ao verificar resposta"
-    });
-  }
-});
-
-// GET - Listar matérias disponíveis
+// GET - Listar matérias disponíveis (automático)
 app.get("/api/quiz/materias", async (req, res) => {
   try {
-    const materias = Object.keys(materiasMap);
+    const materias = await detectarMaterias();
     
     res.json({
       success: true,
@@ -164,31 +132,36 @@ app.get("/api/quiz/materias", async (req, res) => {
   }
 });
 
-// POST - Adicionar nova pergunta (para admin) - AGORA ESPECIFICA MATÉRIA
+// POST - Adicionar nova pergunta (inteligente)
 app.post("/api/quiz/perguntas", async (req, res) => {
   try {
     const { pergunta, opcoes, respostaCorreta, materia, nivel, explicacao } = req.body;
     
-    // Validação básica
     if (!pergunta || !opcoes || !respostaCorreta || !materia) {
       return res.status(400).json({
         success: false,
         error: "Campos obrigatórios: pergunta, opcoes, respostaCorreta, materia"
       });
     }
-    
-    const arquivoMateria = materiasMap[materia.toLowerCase()];
-    if (!arquivoMateria) {
-      return res.status(404).json({
-        success: false,
-        error: `Matéria '${materia}' não encontrada`
-      });
-    }
 
-    const quizData = await readJson(`./data/quiz/${arquivoMateria}`);
+    const materiaLower = materia.toLowerCase();
+    const arquivoMateria = `./data/quiz/${materiaLower}.json`;
+    
+    let quizData;
+    let usarArquivoEspecifico = false;
+
+    // Decidir onde salvar
+    if (await fs.pathExists(arquivoMateria)) {
+      // ✅ Salvar no arquivo específico da matéria
+      quizData = await readJson(arquivoMateria);
+      usarArquivoEspecifico = true;
+    } else {
+      // ✅ Salvar no quiz.json geral
+      quizData = await readJson("./data/quiz.json");
+    }
     
     const novaPergunta = {
-      _id: (quizData.perguntas.length + 1).toString(),
+      id: (quizData.perguntas.length + 1).toString(),
       pergunta,
       opcoes,
       respostaCorreta,
@@ -198,11 +171,17 @@ app.post("/api/quiz/perguntas", async (req, res) => {
     };
     
     quizData.perguntas.push(novaPergunta);
-    await writeJson(`./data/quiz/${arquivoMateria}`, quizData);
+    
+    if (usarArquivoEspecifico) {
+      await fs.writeJson(arquivoMateria, quizData, { spaces: 2 });
+    } else {
+      await fs.writeJson("./data/quiz.json", quizData, { spaces: 2 });
+    }
     
     res.json({
       success: true,
-      data: novaPergunta
+      data: novaPergunta,
+      arquivo: usarArquivoEspecifico ? `${materiaLower}.json` : 'quiz.json'
     });
     
   } catch (error) {
@@ -213,42 +192,11 @@ app.post("/api/quiz/perguntas", async (req, res) => {
   }
 });
 
-// GET - Estatísticas das matérias
-app.get("/api/quiz/estatisticas", async (req, res) => {
-  try {
-    const estatisticas = {};
-    
-    for (const [materia, arquivo] of Object.entries(materiasMap)) {
-      const quizData = await readJson(`./data/quiz/${arquivo}`);
-      estatisticas[materia] = {
-        totalPerguntas: quizData.perguntas.length,
-        niveis: {}
-      };
-      
-      // Contar por nível
-      quizData.perguntas.forEach(p => {
-        const nivel = p.nivel || 'medio';
-        estatisticas[materia].niveis[nivel] = (estatisticas[materia].niveis[nivel] || 0) + 1;
-      });
-    }
-    
-    res.json({
-      success: true,
-      data: estatisticas
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: "Erro ao buscar estatísticas"
-    });
-  }
-});
-
 // ----------------------------
-// Rotas principais da API (existentes)
+// ROTAS EXISTENTES (mantenha as suas)
 // ----------------------------
 app.get("/", (req, res) => {
-  res.send("📘 API MozEstuda está online! | 🎯 Quiz com Matérias Separadas");
+  res.send("📘 API MozEstuda está online! | 🎯 Quiz com Separação Inteligente de Matérias");
 });
 
 app.get("/api/ebooks", async (req, res) => {
@@ -261,6 +209,11 @@ app.get("/api/banners", async (req, res) => {
   res.json(banners);
 });
 
+// POST - Verificar resposta (mantenha seu código existente)
+app.post("/api/quiz/verificar-resposta", async (req, res) => {
+  // ... (mantenha seu código atual)
+});
+
 // ----------------------------
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Servidor rodando em http://localhost:${PORT} | 🎯 Quiz com Matérias Separadas!`));
+app.listen(PORT, () => console.log(`✅ Servidor rodando em http://localhost:${PORT} | 🎯 Sistema de Matérias Híbrido!`));
