@@ -1,0 +1,32 @@
+{
+  "perguntas": [
+    {
+      "_id": "1",
+      "pergunta": "Qual é o valor de π (pi) aproximadamente?",
+      "opcoes": {
+        "A": "3.14",
+        "B": "2.71", 
+        "C": "1.61",
+        "D": "4.20"
+      },
+      "respostaCorreta": "A",
+      "materia": "matematica",
+      "nivel": "medio",
+      "explicacao": "π (pi) é aproximadamente 3.14159, mas geralmente usamos 3.14 para cálculos simples."
+    },
+    {
+      "_id": "2",
+      "pergunta": "Qual é a fórmula de Bhaskara?",
+      "opcoes": {
+        "A": "x = -b ± √(b² - 4ac) / 2a",
+        "B": "x = b ± √(b² + 4ac) / 2a",
+        "C": "x = -b ± √(b² - ac) / 2a",
+        "D": "x = b ± √(b² - 4ac) / a"
+      },
+      "respostaCorreta": "A",
+      "materia": "matematica", 
+      "nivel": "medio",
+      "explicacao": "A fórmula de Bhaskara é usada para resolver equações do segundo grau."
+    }
+  ]
+}
