@@ -1,6 +1,3 @@
-Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
-
-```json
 {
   "perguntas": [
     {
@@ -74,7 +71,6 @@ Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
       "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
     },
 
-    // MAIS PERGUNTAS DE GEOGRAFIA (Total: 8)
     {
       "id": "6",
       "pergunta": "Qual é o maior oceano do mundo?",
@@ -174,7 +170,6 @@ Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
       "explicacao": "Moçambique tem clima tropical, com estações chuvosa e seca."
     },
 
-    // MAIS PERGUNTAS DE LITERATURA (Total: 8)
     {
       "id": "13",
       "pergunta": "Quem escreveu 'Memorial do Convento'?",
@@ -288,7 +283,6 @@ Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
       "explicacao": "'Dom Casmurro' é uma das obras mais famosas de Machado de Assis."
     },
 
-    // MAIS PERGUNTAS DE QUÍMICA (Total: 8)
     {
       "id": "21",
       "pergunta": "Qual é o símbolo químico do ouro?",
@@ -402,7 +396,6 @@ Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
       "explicacao": "O mercúrio é um dos poucos metais que se encontra no estado líquido à temperatura ambiente."
     },
 
-    // MAIS PERGUNTAS DE HISTÓRIA (Total: 8)
     {
       "id": "29",
       "pergunta": "Quem foi o primeiro presidente de Moçambique?",
@@ -504,4 +497,129 @@ Vou adicionar 8 perguntas para cada disciplina no seu `quiz.json`:
     {
       "id": "36",
       "pergunta": "Qual acordo pôs fim à Guerra Civil em Moçambique?",
-      "op
+      "opcoes": {
+        "A": "Acordo de Lusaka",
+        "B": "Acordo de Roma",
+        "C": "Acordo de Arusha",
+        "D": "Acordo de Maputo"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "medio",
+      "explicacao": "O Acordo Geral de Paz foi assinado em Roma em 1992, pondo fim à guerra civil."
+    },
+
+    {
+      "id": "37",
+      "pergunta": "Qual é o resultado de 15 + 27?",
+      "opcoes": {
+        "A": "32",
+        "B": "42",
+        "C": "38",
+        "D": "45"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "facil",
+      "explicacao": "15 + 27 = 42"
+    },
+    {
+      "id": "38",
+      "pergunta": "Quanto é 25% de 200?",
+      "opcoes": {
+        "A": "25",
+        "B": "50",
+        "C": "75",
+        "D": "100"
+      },
+      "respostaCorreta": "B", 
+      "materia": "Matemática",
+      "nivel": "facil",
+      "explicacao": "25% de 200 = 0.25 × 200 = 50"
+    },
+    {
+      "id": "39",
+      "pergunta": "Qual é a raiz quadrada de 144?",
+      "opcoes": {
+        "A": "11",
+        "B": "12",
+        "C": "13",
+        "D": "14"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "12 × 12 = 144, portanto √144 = 12"
+    },
+    {
+      "id": "40",
+      "pergunta": "Se x + 7 = 15, qual é o valor de x?",
+      "opcoes": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      },
+      "respostaCorreta": "C",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "x + 7 = 15 → x = 15 - 7 → x = 8"
+    },
+    {
+      "id": "41",
+      "pergunta": "Qual é a fórmula da área do círculo?",
+      "opcoes": {
+        "A": "πr²",
+        "B": "2πr",
+        "C": "πd",
+        "D": "2πr²"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática", 
+      "nivel": "medio",
+      "explicacao": "A área do círculo é calculada por π × raio²"
+    },
+    {
+      "id": "42",
+      "pergunta": "Qual é o MMC de 12 e 18?",
+      "opcoes": {
+        "A": "24",
+        "B": "36",
+        "C": "48",
+        "D": "54"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "MMC(12,18) = 36"
+    },
+    {
+      "id": "43",
+      "pergunta": "Qual é o MDC de 24 e 36?",
+      "opcoes": {
+        "A": "6",
+        "B": "8",
+        "C": "12",
+        "D": "18"
+      },
+      "respostaCorreta": "C",
+      "materia": "Matemática",
+      "nivel": "medio",
+      "explicacao": "MDC(24,36) = 12"
+    },
+    {
+      "id": "44",
+      "pergunta": "Qual é o valor de π (pi) aproximadamente?",
+      "opcoes": {
+        "A": "3.14",
+        "B": "2.71",
+        "C": "1.61",
+        "D": "4.20"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática",
+      "nivel": "facil",
+      "explicacao": "π (pi) é aproximadamente 3.14159, mas geralmente usamos 3.14 para cálculos simples."
+    }
+  ]
+}
