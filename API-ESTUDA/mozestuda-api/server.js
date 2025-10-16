@@ -23,6 +23,119 @@ const writeJson = async (file, data) => {
   await fs.writeFile(file, JSON.stringify(data, null, 2));
 };
 
+
+// ----------------------------
+// ROTAS PARA EBOOKS RELACIONADOS
+// ----------------------------
+
+// GET - Buscar ebooks relacionados
+app.get("/api/ebooks/relacionados", async (req, res) => {
+  try {
+    const { ebookId, categoria } = req.query;
+    
+    if (!ebookId && !categoria) {
+      return res.status(400).json({
+        success: false,
+        error: "Parâmetros ebookId ou categoria são obrigatórios"
+      });
+    }
+
+    // Ler dados dos ebooks e relacionamentos
+    const [ebooksData, relacionadosData] = await Promise.all([
+      readJson("./data/ebooks.json"),
+      readJson("./data/ebooks/relacionados.json")
+    ]);
+
+    let ebooksRelacionados = [];
+
+    if (ebookId) {
+      // ✅ BUSCAR POR ID ESPECÍFICO DO EBOOK
+      const relacionamento = relacionadosData.relacionamentos.find(
+        rel => rel.ebookId === parseInt(ebookId)
+      );
+      
+      if (relacionamento) {
+        ebooksRelacionados = ebooksData.filter(ebook =>
+          relacionamento.ebooksRelacionados.includes(ebook.id)
+        );
+      }
+    }
+
+    // ✅ SE NÃO ENCONTRAR POR ID, BUSCAR POR CATEGORIA
+    if (ebooksRelacionados.length === 0 && categoria) {
+      ebooksRelacionados = ebooksData.filter(ebook =>
+        ebook.categoria.toLowerCase() === categoria.toLowerCase() &&
+        ebook.id !== parseInt(ebookId || 0)
+      ).slice(0, 4); // Limitar a 4 ebooks
+    }
+
+    // ✅ EMBARALHAR RESULTADOS
+    ebooksRelacionados = ebooksRelacionados.sort(() => Math.random() - 0.5);
+
+    res.json({
+      success: true,
+      data: ebooksRelacionados,
+      total: ebooksRelacionados.length
+    });
+
+  } catch (error) {
+    console.error("❌ Erro ao buscar ebooks relacionados:", error);
+    res.status(500).json({
+      success: false,
+      error: "Erro interno do servidor ao buscar ebooks relacionados"
+    });
+  }
+});
+
+// POST - Adicionar relacionamento entre ebooks
+app.post("/api/ebooks/relacionamentos", async (req, res) => {
+  try {
+    const { ebookId, ebooksRelacionados, categoria } = req.body;
+
+    if (!ebookId || !ebooksRelacionados || !categoria) {
+      return res.status(400).json({
+        success: false,
+        error: "Campos obrigatórios: ebookId, ebooksRelacionados, categoria"
+      });
+    }
+
+    const relacionadosData = await readJson("./data/ebooks/relacionados.json");
+
+    // Verificar se já existe relacionamento para este ebook
+    const index = relacionadosData.relacionamentos.findIndex(
+      rel => rel.ebookId === parseInt(ebookId)
+    );
+
+    const novoRelacionamento = {
+      ebookId: parseInt(ebookId),
+      categoria,
+      ebooksRelacionados: ebooksRelacionados.map(id => parseInt(id))
+    };
+
+    if (index !== -1) {
+      // Atualizar existente
+      relacionadosData.relacionamentos[index] = novoRelacionamento;
+    } else {
+      // Adicionar novo
+      relacionadosData.relacionamentos.push(novoRelacionamento);
+    }
+
+    await writeJson("./data/ebooks/relacionados.json", relacionadosData);
+
+    res.json({
+      success: true,
+      data: novoRelacionamento,
+      message: "Relacionamento de ebooks atualizado com sucesso"
+    });
+
+  } catch (error) {
+    console.error("❌ Erro ao adicionar relacionamento:", error);
+    res.status(500).json({
+      success: false,
+      error: "Erro ao adicionar relacionamento entre ebooks"
+    });
+  }
+});
 // ----------------------------
 // ROTAS DO QUIZ (ORIGINAL)
 // ----------------------------
@@ -188,3 +301,4 @@ app.get("/api/banners", async (req, res) => {
 // ----------------------------
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`✅ Servidor rodando em http://localhost:${PORT} | 🎯 Quiz API Pronta!`));
+
