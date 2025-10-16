@@ -1,0 +1,29 @@
+{
+  "relacionamentos": [
+    {
+      "ebookId": 1,
+      "categoria": "Matemática",
+      "ebooksRelacionados": [2, 3, 4, 5]
+    },
+    {
+      "ebookId": 2,
+      "categoria": "Matemática", 
+      "ebooksRelacionados": [1, 3, 6, 7]
+    },
+    {
+      "ebookId": 3,
+      "categoria": "Programação",
+      "ebooksRelacionados": [8, 9, 10, 11]
+    },
+    {
+      "ebookId": 4,
+      "categoria": "História",
+      "ebooksRelacionados": [12, 13, 14, 15]
+    },
+    {
+      "ebookId": 5,
+      "categoria": "Ciências",
+      "ebooksRelacionados": [16, 17, 18, 19]
+    }
+  ]
+}
