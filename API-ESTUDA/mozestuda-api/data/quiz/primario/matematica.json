@@ -1,0 +1,46 @@
+{
+  "perguntas": [
+    {
+      "id": "37",
+      "pergunta": "Qual é o resultado de 15 + 27?",
+      "opcoes": {
+        "A": "32",
+        "B": "42",
+        "C": "38",
+        "D": "45"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "primario",
+      "explicacao": "15 + 27 = 42"
+    },
+    {
+      "id": "38",
+      "pergunta": "Quanto é 25% de 200?",
+      "opcoes": {
+        "A": "25",
+        "B": "50",
+        "C": "75",
+        "D": "100"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "primario",
+      "explicacao": "25% de 200 = 0.25 × 200 = 50"
+    },
+    {
+      "id": "44",
+      "pergunta": "Qual é o valor de π (pi) aproximadamente?",
+      "opcoes": {
+        "A": "3.14",
+        "B": "2.71",
+        "C": "1.61",
+        "D": "4.20"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática",
+      "nivel": "primario",
+      "explicacao": "π (pi) é aproximadamente 3.14159, mas geralmente usamos 3.14 para cálculos simples."
+    }
+  ]
+}

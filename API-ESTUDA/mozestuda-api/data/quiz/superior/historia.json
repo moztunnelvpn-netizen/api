@@ -1,0 +1,18 @@
+{
+  "perguntas": [
+    {
+      "id": "29",
+      "pergunta": "Quem foi o primeiro presidente de Moçambique?",
+      "opcoes": {
+        "A": "Joaquim Chissano",
+        "B": "Samora Machel",
+        "C": "Armando Guebuza",
+        "D": "Filipe Nyusi"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "primario",
+      "explicacao": "Samora Machel foi o primeiro presidente de Moçambique após a independência."
+    }
+  ]
+}

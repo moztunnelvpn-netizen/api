@@ -1,0 +1,88 @@
+{
+  "perguntas": [
+    {
+      "id": "4",
+      "pergunta": "Em que ano Moçambique tornou-se independente?",
+      "opcoes": {
+        "A": "1975",
+        "B": "1965",
+        "C": "1985",
+        "D": "1995"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "secundario",
+      "explicacao": "Moçambique tornou-se independente de Portugal em 25 de Junho de 1975."
+    },
+    {
+      "id": "30",
+      "pergunta": "Em que ano ocorreu a Conferência de Berlim?",
+      "opcoes": {
+        "A": "1884-1885",
+        "B": "1900-1901",
+        "C": "1870-1871",
+        "D": "1899-1900"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "secundario",
+      "explicacao": "A Conferência de Berlim ocorreu entre 1884-1885 e definiu a partilha de África."
+    },
+    {
+      "id": "31",
+      "pergunta": "Qual era o nome antigo de Maputo?",
+      "opcoes": {
+        "A": "Vila Pery",
+        "B": "Vila Junqueiro",
+        "C": "Lourenço Marques",
+        "D": "Vila Cabral"
+      },
+      "respostaCorreta": "C",
+      "materia": "História",
+      "nivel": "secundario",
+      "explicacao": "Maputo chamava-se Lourenço Marques durante o período colonial."
+    },
+    {
+      "id": "32",
+      "pergunta": "Quem foi o líder da FRELIMO durante a luta de libertação?",
+      "opcoes": {
+        "A": "Samora Machel",
+        "B": "Joaquim Chissano",
+        "C": "Eduardo Mondlane",
+        "D": "Armando Guebuza"
+      },
+      "respostaCorreta": "C",
+      "materia": "História",
+      "nivel": "secundario",
+      "explicacao": "Eduardo Mondlane foi o primeiro presidente da FRELIMO e líder da luta de libertação."
+    },
+    {
+      "id": "33",
+      "pergunta": "Em que século os portugueses chegaram a Moçambique?",
+      "opcoes": {
+        "A": "XV",
+        "B": "XVI",
+        "C": "XVII",
+        "D": "XVIII"
+      },
+      "respostaCorreta": "A",
+      "materia": "História",
+      "nivel": "secundario",
+      "explicacao": "Os portugueses chegaram a Moçambique no século XV, por volta de 1498."
+    },
+    {
+      "id": "36",
+      "pergunta": "Qual acordo pôs fim à Guerra Civil em Moçambique?",
+      "opcoes": {
+        "A": "Acordo de Lusaka",
+        "B": "Acordo de Roma",
+        "C": "Acordo de Arusha",
+        "D": "Acordo de Maputo"
+      },
+      "respostaCorreta": "B",
+      "materia": "História",
+      "nivel": "secundario",
+      "explicacao": "O Acordo Geral de Paz foi assinado em Roma em 1992, pondo fim à guerra civil."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "perguntas": [
+    {
+      "id": "5",
+      "pergunta": "Qual é o resultado de 8 × (6 - 2) ÷ 4?",
+      "opcoes": {
+        "A": "4",
+        "B": "8",
+        "C": "12",
+        "D": "16"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "secundario",
+      "explicacao": "Primeiro resolvemos os parênteses: 6-2=4, depois 8×4=32, e finalmente 32÷4=8."
+    },
+    {
+      "id": "39",
+      "pergunta": "Qual é a raiz quadrada de 144?",
+      "opcoes": {
+        "A": "11",
+        "B": "12",
+        "C": "13",
+        "D": "14"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "secundario",
+      "explicacao": "12 × 12 = 144, portanto √144 = 12"
+    },
+    {
+      "id": "40",
+      "pergunta": "Se x + 7 = 15, qual é o valor de x?",
+      "opcoes": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      },
+      "respostaCorreta": "C",
+      "materia": "Matemática",
+      "nivel": "secundario",
+      "explicacao": "x + 7 = 15 → x = 15 - 7 → x = 8"
+    },
+    {
+      "id": "41",
+      "pergunta": "Qual é a fórmula da área do círculo?",
+      "opcoes": {
+        "A": "πr²",
+        "B": "2πr",
+        "C": "πd",
+        "D": "2πr²"
+      },
+      "respostaCorreta": "A",
+      "materia": "Matemática",
+      "nivel": "secundario",
+      "explicacao": "A área do círculo é calculada por π × raio²"
+    },
+    {
+      "id": "42",
+      "pergunta": "Qual é o MMC de 12 e 18?",
+      "opcoes": {
+        "A": "24",
+        "B": "36",
+        "C": "48",
+        "D": "54"
+      },
+      "respostaCorreta": "B",
+      "materia": "Matemática",
+      "nivel": "secundario",
+      "explicacao": "MMC(12,18) = 36"
+    },
+    {
+      "id": "43",
+      "pergunta": "Qual é o MDC de 24 e 36?",
+      "opcoes": {
+        "A": "6",
+        "B": "8",
+        "C": "12",
+        "D": "18"
+      },
+      "respostaCorreta": "C",
+      "materia": "Matemática",
+      "nivel": "secundario",
+      "explicacao": "MDC(24,36) = 12"
+    }
+  ]
+}

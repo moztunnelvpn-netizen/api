@@ -1,0 +1,46 @@
+{
+  "perguntas": [
+    {
+      "id": "8",
+      "pergunta": "Qual é o rio mais longo de Moçambique?",
+      "opcoes": {
+        "A": "Rio Zambeze",
+        "B": "Rio Limpopo",
+        "C": "Rio Save",
+        "D": "Rio Rovuma"
+      },
+      "respostaCorreta": "A",
+      "materia": "Geografia",
+      "nivel": "secundario",
+      "explicacao": "O Rio Zambeze é o mais longo de Moçambique, com cerca de 2.574 km."
+    },
+    {
+      "id": "9",
+      "pergunta": "Quantas províncias tem Moçambique?",
+      "opcoes": {
+        "A": "8",
+        "B": "9",
+        "C": "10",
+        "D": "11"
+      },
+      "respostaCorreta": "D",
+      "materia": "Geografia",
+      "nivel": "secundario",
+      "explicacao": "Moçambique está dividido em 11 províncias."
+    },
+    {
+      "id": "12",
+      "pergunta": "Qual é o clima predominante em Moçambique?",
+      "opcoes": {
+        "A": "Desértico",
+        "B": "Tropical",
+        "C": "Mediterrâneo",
+        "D": "Temperado"
+      },
+      "respostaCorreta": "B",
+      "materia": "Geografia",
+      "nivel": "secundario",
+      "explicacao": "Moçambique tem clima tropical, com estações chuvosa e seca."
+    }
+  ]
+}

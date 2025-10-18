@@ -1,0 +1,88 @@
+{
+  "perguntas": [
+    {
+      "id": "2",
+      "pergunta": "Quem escreveu 'Os Lusíadas'?",
+      "opcoes": {
+        "A": "Fernando Pessoa",
+        "B": "Luís de Camões",
+        "C": "Eça de Queirós",
+        "D": "José Saramago"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "secundario",
+      "explicacao": "'Os Lusíadas' é a obra épica de Luís de Camões, publicada em 1572."
+    },
+    {
+      "id": "13",
+      "pergunta": "Quem escreveu 'Memorial do Convento'?",
+      "opcoes": {
+        "A": "José Saramago",
+        "B": "Fernando Pessoa",
+        "C": "Eça de Queirós",
+        "D": "Luís de Camões"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "secundario",
+      "explicacao": "'Memorial do Convento' é uma obra de José Saramago."
+    },
+    {
+      "id": "15",
+      "pergunta": "Em que século viveu Luís de Camões?",
+      "opcoes": {
+        "A": "XV",
+        "B": "XVI",
+        "C": "XVII",
+        "D": "XVIII"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "secundario",
+      "explicacao": "Luís de Camões viveu no século XVI (1524-1580)."
+    },
+    {
+      "id": "16",
+      "pergunta": "Qual é a obra mais famosa de Eça de Queirós?",
+      "opcoes": {
+        "A": "Os Maias",
+        "B": "Memórias Póstumas",
+        "C": "O Crime do Padre Amaro",
+        "D": "Todos estão corretos"
+      },
+      "respostaCorreta": "D",
+      "materia": "Literatura",
+      "nivel": "secundario",
+      "explicacao": "Eça de Queirós é famoso por todas estas obras."
+    },
+    {
+      "id": "18",
+      "pergunta": "Qual movimento literário veio após o Romantismo?",
+      "opcoes": {
+        "A": "Classicismo",
+        "B": "Realismo",
+        "C": "Modernismo",
+        "D": "Barroco"
+      },
+      "respostaCorreta": "B",
+      "materia": "Literatura",
+      "nivel": "secundario",
+      "explicacao": "O Realismo surgiu como reação ao Romantismo."
+    },
+    {
+      "id": "20",
+      "pergunta": "Qual destas obras é de Machado de Assis?",
+      "opcoes": {
+        "A": "Dom Casmurro",
+        "B": "O Cortiço",
+        "C": "O Guarani",
+        "D": "Iracema"
+      },
+      "respostaCorreta": "A",
+      "materia": "Literatura",
+      "nivel": "secundario",
+      "explicacao": "'Dom Casmurro' é uma das obras mais famosas de Machado de Assis."
+    }
+  ]
+}

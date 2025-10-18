@@ -1,0 +1,60 @@
+{
+  "perguntas": [
+    {
+      "id": "3",
+      "pergunta": "Qual é a fórmula química da água?",
+      "opcoes": {
+        "A": "CO2",
+        "B": "H2O",
+        "C": "NaCl",
+        "D": "O2"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "primario",
+      "explicacao": "A água é composta por dois átomos de hidrogênio e um átomo de oxigênio (H₂O)."
+    },
+    {
+      "id": "21",
+      "pergunta": "Qual é o símbolo químico do ouro?",
+      "opcoes": {
+        "A": "Ag",
+        "B": "Au",
+        "C": "Fe",
+        "D": "Cu"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "primario",
+      "explicacao": "Au é o símbolo do ouro (do latim 'aurum')."
+    },
+    {
+      "id": "24",
+      "pergunta": "Qual é o gás mais abundante na atmosfera?",
+      "opcoes": {
+        "A": "Oxigênio",
+        "B": "Dióxido de Carbono",
+        "C": "Nitrogênio",
+        "D": "Argônio"
+      },
+      "respostaCorreta": "C",
+      "materia": "Química",
+      "nivel": "primario",
+      "explicacao": "O nitrogênio representa cerca de 78% da atmosfera terrestre."
+    },
+    {
+      "id": "28",
+      "pergunta": "Qual é o estado físico do mercúrio à temperatura ambiente?",
+      "opcoes": {
+        "A": "Sólido",
+        "B": "Líquido",
+        "C": "Gasoso",
+        "D": "Plasma"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "primario",
+      "explicacao": "O mercúrio é um dos poucos metais que se encontra no estado líquido à temperatura ambiente."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "perguntas": [
+    {
+      "id": "22",
+      "pergunta": "Quantos elementos tem a tabela periódica?",
+      "opcoes": {
+        "A": "92",
+        "B": "118",
+        "C": "108",
+        "D": "126"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "secundario",
+      "explicacao": "Atualmente a tabela periódica tem 118 elementos confirmados."
+    },
+    {
+      "id": "23",
+      "pergunta": "Qual é o pH da água pura?",
+      "opcoes": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "respostaCorreta": "C",
+      "materia": "Química",
+      "nivel": "secundario",
+      "explicacao": "A água pura tem pH neutro igual a 7."
+    },
+    {
+      "id": "25",
+      "pergunta": "O que significa H₂SO₄?",
+      "opcoes": {
+        "A": "Ácido clorídrico",
+        "B": "Ácido sulfúrico",
+        "C": "Ácido nítrico",
+        "D": "Ácido fosfórico"
+      },
+      "respostaCorreta": "B",
+      "materia": "Química",
+      "nivel": "secundario",
+      "explicacao": "H₂SO₄ é a fórmula do ácido sulfúrico."
+    }
+  ]
+}

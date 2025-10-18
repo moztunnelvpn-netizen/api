@@ -1,0 +1,18 @@
+{
+  "perguntas": [
+    {
+      "id": "19",
+      "pergunta": "Quem é o autor de 'Mensagem'?",
+      "opcoes": {
+        "A": "Fernando Pessoa",
+        "B": "Florbela Espanca",
+        "C": "Cecília Meireles",
+        "D": "Vergílio Ferreira"
+      },
+      "respostaCorreta": "A",
+      "materia": "Português",
+      "nivel": "primario",
+      "explicacao": "'Mensagem' é a única obra em português publicada por Fernando Pessoa em vida."
+    }
+  ]
+}

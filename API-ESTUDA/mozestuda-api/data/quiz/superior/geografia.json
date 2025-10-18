@@ -1,0 +1,46 @@
+{
+  "perguntas": [
+    {
+      "id": "1",
+      "pergunta": "Qual é a capital de Moçambique?",
+      "opcoes": {
+        "A": "Maputo",
+        "B": "Beira",
+        "C": "Nampula",
+        "D": "Quelimane"
+      },
+      "respostaCorreta": "A",
+      "materia": "Geografia",
+      "nivel": "primario",
+      "explicacao": "Maputo é a capital e maior cidade de Moçambique, localizada na baía de Maputo."
+    },
+    {
+      "id": "6",
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "opcoes": {
+        "A": "Atlântico",
+        "B": "Índico",
+        "C": "Pacífico",
+        "D": "Ártico"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia",
+      "nivel": "primario",
+      "explicacao": "O Oceano Pacífico é o maior oceano da Terra."
+    },
+    {
+      "id": "7",
+      "pergunta": "Moçambique localiza-se em qual região da África?",
+      "opcoes": {
+        "A": "África Ocidental",
+        "B": "África Central",
+        "C": "África Oriental",
+        "D": "África do Norte"
+      },
+      "respostaCorreta": "C",
+      "materia": "Geografia",
+      "nivel": "primario",
+      "explicacao": "Moçambique situa-se na costa oriental da África Austral."
+    }
+  ]
+}
